@@ -1,6 +1,6 @@
 # <div align="center">XvA</div>
 
-<div align="center">简~~约~~单 HEXO 主题</div>
+一个简~~约~~单的 HEXO 主题
 
 # Install 安装
 
