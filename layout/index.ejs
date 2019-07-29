@@ -12,7 +12,7 @@
                         <h3><a href="<%- url_for(post.path) %>"><%= post.title %></a><small class="post-time">
                                 <%- date(post.date, "YYYY-MM-DD") %></small></h3>
                         <small><%- post.excerpt %></small>
-                        <a class="btn btn-sm" href="">Readmore</a>
+                        <a class="btn btn-sm" href="<%- url_for(post.path) %>">Readmore</a>
                     </div>
                 </div>
                 <% }) %>
