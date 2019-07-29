@@ -15,5 +15,6 @@ cp _config.example.yml _config.yml
 - [x] disqus
 - [x] google analytics
 - [x] 文章版权声明
+- [x] highlight.js 代码高亮
 - [ ] 图片窗口内打开
 - [ ] disqus lazyload
