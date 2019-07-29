@@ -16,3 +16,9 @@ widget:
     list:
       - title: 
         url: 
+
+comment:
+  disqus:
+    enable: false
+    shortname: 
+    count: true

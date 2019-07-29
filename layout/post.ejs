@@ -16,19 +16,20 @@
                     <div class="post-content">
                         <%- page.content %>
                     </div>
-                    <div>
-                        <% if (theme.post_copyright.enable == true && page.copyright != false){ %>
-                        <%- partial('partial/copyright') %>
-                        <% } %>
-                    </div>
+                    <% if (theme.post_copyright.enable == true && page.copyright != false){ %>
+                    <%- partial('partial/copyright') %>
+                    <% } %>
                 </article>
+                <% if(theme.comment.disqus.enable==true && page.comment!=false){ %>
+                <hr>
+                <%- partial('partial/disqus') %>
+                <% } %>
                 <br>
             </div>
             <div class="col-md-4">
                 <%- partial('partial/postinfo') %>
                 <%- partial('partial/sidebar') %>
             </div>
-
         </div>
         <div id="footer">
             <%- partial('partial/footer') %>

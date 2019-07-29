@@ -1,13 +1,15 @@
-<ul class="post-copyright">
-    <li class="post-copyright-author"><strong>本文作者：</strong>
-        <%= theme.post_copyright.author %>
-    </li>
-    <li class="post-copyright-link"><strong>本文链接：</strong>
-        <a href="<% page.permalink %>">
-            <%= page.permalink %>
-        </a>
-    </li>
-    <li class="post-copyright-license"><strong>版权声明：</strong>
-        <%- theme.post_copyright.copyright_text %>
-    </li>
-</ul>
+<div>
+    <ul class="post-copyright">
+        <li class="post-copyright-author"><strong>本文作者：</strong>
+            <%= theme.post_copyright.author %>
+        </li>
+        <li class="post-copyright-link"><strong>本文链接：</strong>
+            <a href="<% page.permalink %>">
+                <%= page.permalink %>
+            </a>
+        </li>
+        <li class="post-copyright-license"><strong>版权声明：</strong>
+            <%- theme.post_copyright.copyright_text %>
+        </li>
+    </ul>
+</div>
