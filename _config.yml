@@ -22,3 +22,8 @@ comment:
     enable: false
     shortname: 
     count: true
+
+analytics:
+  google:
+    enable: false
+    id: 
