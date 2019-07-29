@@ -5,13 +5,17 @@
     <%- partial('partial/header') %>
     <div class="container">
         <div class="page-header">
+            <% if(page.path.indexOf('tags')==-1){ %>
             <h1>Archive <small>All articles</small></h1>
+            <% }else{ %>
+            <h1>Tag: <%- page.path.replace('tags/','').replace('/index.html','') %> <small>All articles</small></h1>
+            <% } %>
         </div>
-        <section class="archive">
-                <% page.posts.each(function (post) { %>
-                    <span class="post-date"><%= date(post.date, "YYYY-MM-DD") %></span>
-                    <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a><br>
-                <% }) %>
+        <section class="archive" path="<%= page.path %>">
+            <% page.posts.each(function (post) { %>
+            <span class="post-date"><%= date(post.date, "YYYY-MM-DD") %></span>
+            <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a><br>
+            <% }) %>
         </section>
         <%- partial('partial/paginator') %>
         <div id="footer">
