@@ -14,4 +14,5 @@ cp _config.example.yml _config.yml
 - [x] 侧边栏友情链接
 - [x] disqus
 - [x] google analytics
+- [x] 文章版权声明
 - [ ] 图片窗口内打开
