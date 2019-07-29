@@ -21,6 +21,7 @@ comment:
   disqus:
     enable: false
     shortname: 
+    lazyload: false
 
 analytics:
   google:
