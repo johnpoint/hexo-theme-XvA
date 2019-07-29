@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<%- partial('partial/head') %>
+
+<body style="padding-top: 70px;">
+    <%- partial('partial/header') %>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <% page.posts.each(function (post) { %>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3><a href="<%- url_for(post.path) %>"><%= post.title %></a><small class="post-time">
+                                <%- date(post.date, "YYYY-MM-DD") %></small></h3>
+                        <small><%- post.excerpt %></small>
+                        <a class="btn btn-sm" href="">Readmore</a>
+                    </div>
+                </div>
+                <% }) %>
+                <%- partial('partial/paginator') %>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <%- partial('partial/sidebar') %>
+            </div>
+        </div>
+        <div id="footer">
+            <%- partial('partial/footer') %>
+        </div>
+    </div>
+</body>

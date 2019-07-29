@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<%- partial('partial/head') %>
+
+<body style="padding-top: 70px;">
+    <%- partial('partial/header') %>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <article class="post">
+                    <div class="post-title">
+                        <div class="page-header">
+                            <h1>
+                                <%= page.title %> <small><%- date(page.date, "YYYY-MM-DD") %></small></h1>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <%- page.content %>
+                    </div>
+                    <div>
+                        <% if (theme.post_copyright.enable == true && page.copyright != false){ %>
+                        <%- partial('partial/copyright') %>
+                        <% } %>
+                    </div>
+                </article>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <%- partial('partial/postinfo') %>
+                <%- partial('partial/sidebar') %>
+            </div>
+
+        </div>
+        <div id="footer">
+            <%- partial('partial/footer') %>
+        </div>
+    </div>
+</body>

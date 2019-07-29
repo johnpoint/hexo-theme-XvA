@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<%- partial('partial/head') %>
+
+<body style="padding-top: 70px;">
+    <%- partial('partial/header') %>
+    <div class="container">
+        <div class="page-header">
+            <h1>Archive <small>All articles</small></h1>
+        </div>
+        <section class="archive">
+                <% page.posts.each(function (post) { %>
+                    <span class="post-date"><%= date(post.date, "YYYY-MM-DD") %></span>
+                    <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a><br>
+                <% }) %>
+        </section>
+        <%- partial('partial/paginator') %>
+        <div id="footer">
+            <%- partial('partial/footer') %>
+        </div>
+    </div>
+</body>
