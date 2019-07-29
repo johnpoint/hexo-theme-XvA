@@ -18,6 +18,10 @@
                         <%- page.content %>
                     </div>
                 </article>
+                <% if(theme.comment.disqus.enable==true && page.comment!=false){ %>
+                <hr>
+                <%- partial('partial/disqus') %>
+                <% } %>
             </div>
             <% if(page.sidebar){ %>
             <br>
