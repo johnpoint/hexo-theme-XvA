@@ -133,3 +133,7 @@ ul {
 .frpanel {
     height: 100px;
 }
+
+span#busuanzi_container_site_pv {
+    color: rgba(0, 0, 0, 0.5);
+}
