@@ -4,7 +4,7 @@
 
 # Install 安装
 
-```
+```bash
 git clone https://github.com/johnpoint/hexo-theme-XvA themes/XvA
 cd themes/XvA
 cp _config.example.yml _config.yml
