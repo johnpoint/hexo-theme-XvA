@@ -66,6 +66,16 @@ analytics:
       end:  # 描述 单位 示例:人次 Example: times
       # 效果: 本站访客数 233 人次
       # effect: view 233 times
+
+tagscloud:
+  color:
+    enable: false
+    start: # Start color. You can use hex (#b700ff), rgba (rgba(183, 0, 255, 1)), hsla (hsla(283, 100%, 50%, 1)) or color keywords. This option only works when color is true.
+    end: # End color. You can use hex (#b700ff), rgba (rgba(183, 0, 255, 1)), hsla (hsla(283, 100%, 50%, 1)) or color keywords. This option only works when color is true.
+  text:
+    min: 20 # 最小字体大小 Minimal font size
+    max: 40 # 最大字体大小 Maximum font size
+    unit: px # 字体尺寸单位 Unit of font size
 ```
 
 # TODO
@@ -76,8 +86,8 @@ analytics:
 - [x] 文章版权声明
 - [x] highlight.js 代码高亮
 - [x] 独立友链页面
+- [x] 独立标签云
 - [x] 添加不蒜子统计
 - [ ] 图片窗口内打开
 - [ ] disqus lazyload
-- [ ] 独立标签云
 - [ ] 修复手机部分字体不兼容

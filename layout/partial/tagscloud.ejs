@@ -1,0 +1,5 @@
+<% if(theme.tagscloud.color.enable){ %>
+<%- tagcloud(site.tags,{color:true,start_color:theme.tagscloud.color.start,end_color:theme.tagscloud.color.end,min_font:theme.tagscloud.text.min,max_font:theme.tagscloud.text.max,unit:theme.tagscloud.text.unit}) %>
+<% }else{ %>
+<%- tagcloud(site.tags,{min_font:theme.tagscloud.text.min,max_font:theme.tagscloud.text.max,unit:theme.tagscloud.text.unit}) %>
+<% } %>

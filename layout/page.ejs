@@ -14,9 +14,13 @@
                             <h1><%= page.title %> <small><%- page.description %></small></h1>
                         </div>
                     </div>
+                    <% if(page.layout=="tagscloud"){ %>
+                        <%- partial('partial/tagscloud') %>
+                    <% } else { %>
                     <div class="post-content">
                         <%- page.content %>
                     </div>
+                    <% } %>
                 </article>
                 <% if(theme.comment.disqus.enable==true && page.comment!=false){ %>
                 <hr>
