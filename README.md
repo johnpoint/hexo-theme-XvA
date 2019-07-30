@@ -23,7 +23,7 @@ post_copyright:
   author: 
   copyright_text: 本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
 
-sitesince: #页脚版权信息，填写年份 Footer copyright information, filled in the year
+sitesince: #页脚版权信息，年份 Footer copyright information, filled in the year
 
 # 侧边栏
 # sidebar
@@ -59,6 +59,13 @@ analytics:
   google:
     enable: false
     id: #UA-xxxxxx-x
+  busuanzi: # 不蒜子网站统计
+    enable: false
+    text:
+      head: # 描述 示例:本站访客数 Example: view
+      end:  # 描述 单位 示例:人次 Example: times
+      # 效果: 本站访客数 233 人次
+      # effect: view 233 times
 ```
 
 # TODO
