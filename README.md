@@ -72,3 +72,4 @@ analytics:
 - [ ] 图片窗口内打开
 - [ ] disqus lazyload
 - [ ] 添加不蒜子统计
+- [ ] 独立标签云
