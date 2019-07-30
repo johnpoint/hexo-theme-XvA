@@ -14,6 +14,10 @@ img {
     margin: 8px 0;
 }
 
+.post ul {
+    padding-left: 50px;
+}
+
 #footer {
     background: rgba(0, 0, 0, 0.05);
     padding: .8em 0 3.6em;
@@ -136,4 +140,16 @@ ul {
 
 span#busuanzi_container_site_pv {
     color: rgba(0, 0, 0, 0.5);
+}
+
+blockquote {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+ol.post-toc {
+    list-style-type: none;
+}
+
+ol.post-toc-child {
+    list-style-type: none;
 }

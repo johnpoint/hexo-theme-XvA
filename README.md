@@ -89,5 +89,5 @@ tagscloud:
 - [x] 独立标签云
 - [x] 添加不蒜子统计
 - [ ] 图片窗口内打开
-- [ ] disqus lazyload
+- [x] disqus lazyload
 - [ ] 修复手机部分字体不兼容
