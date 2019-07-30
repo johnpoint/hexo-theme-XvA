@@ -22,6 +22,7 @@ widget:
 # Links
 # 友情链接
 friends:
+  pagetitle:
   list:
     - title: # 标题
       img: # 头像 Avatar
