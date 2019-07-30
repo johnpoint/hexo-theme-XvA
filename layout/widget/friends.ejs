@@ -3,8 +3,10 @@
         <h3 class="panel-title">Friends</h3>
     </div>
     <div class="panel-body">
-        <% theme.widget.friends.list.forEach(function(item){ %>
-            <a class="frlink" href="<%= item.url %>"><%= item.title %></a><br>
+        <% theme.friends.list.forEach(function(item){ %>
+        <% if(item.sidebar==true){ %>
+        <a class="frlink" href="<%= item.url %>"><%= item.title %></a><br>
+        <% } %>
         <% }) %>
     </div>
 </div>

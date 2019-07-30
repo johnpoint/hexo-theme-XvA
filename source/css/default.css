@@ -125,3 +125,11 @@ ul {
     padding: 0 10px 7px 0;
     border: 1px solid #fff;
 }
+
+.frimg {
+    max-width: 50px;
+}
+
+.frpanel {
+    height: 100px;
+}

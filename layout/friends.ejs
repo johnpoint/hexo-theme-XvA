@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<%- partial('partial/head') %>
+
+<body style="padding-top: 70px;">
+    <%- partial('partial/header') %>
+    <div class="container">
+        <div class="page-header">
+            <h1><%- theme.friends.pagetitle %> <small>friends</small></h1>
+        </div>
+        <div class="row">
+            <% theme.friends.list.forEach(function(item){ %>
+            <% if(item.page==true){ %>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-body frpanel">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <% if(item.img==""){ %>
+                                    <img class="frimg" src="23333">
+                                    <% }else{ %>
+                                    <img class="frimg" src="<%- item.img %>">
+                                    <% } %>
+                                </div>
+                                <div class="frtext col-xs-8">
+                                    <h4><strong><a href="<%- item.url %>"><%= item.title %></a></strong></h4>
+                                    <p><%= item.desc %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+            <% }) %>
+        </div>
+        <br>
+    </div>
+    <%- partial('partial/footer') %>
+</body>

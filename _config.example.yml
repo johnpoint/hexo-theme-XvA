@@ -13,9 +13,15 @@ widget:
     count: 10
   friends:
     enable: false
-    list:
-      - title: 
-        url: 
+
+friends:
+  list:
+    - title: 
+      img:
+      url:
+      desc: 
+      sidebar: false
+      page: false
 
 comment:
   disqus:
