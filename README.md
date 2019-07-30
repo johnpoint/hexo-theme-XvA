@@ -17,5 +17,6 @@ cp _config.example.yml _config.yml
 - [x] google analytics
 - [x] 文章版权声明
 - [x] highlight.js 代码高亮
+- [x] 独立友链页面
 - [ ] 图片窗口内打开
 - [ ] disqus lazyload
