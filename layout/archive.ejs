@@ -4,6 +4,7 @@
 <body style="padding-top: 70px;">
     <%- partial('partial/header') %>
     <div class="container">
+    <% console.log(moment("2019-07-28T17:07:00.000")) %>
         <div class="page-header">
             <% if(page.path.indexOf('tags')==-1){ %>
             <h1><%- __('Archives') %> <small><%- __('All articles') %></small></h1>
@@ -12,9 +13,16 @@
             <% } %>
         </div>
         <section class="archive" path="<%= page.path %>">
+            <% var ayear %>
+            <% var byear %>
             <% page.posts.each(function (post) { %>
-            <span class="post-date"><%= date(post.date, "YYYY-MM-DD") %></span>
-            <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a><br>
+            <% byear=date(post.date, "YYYY") %>
+            <% if(ayear!=byear){ ayear=byear %>
+                <h2><%- byear %></h2> 
+            <% } %>
+            <div class="archives-post-content">
+            <span class="post-date"><%= date(post.date, "MM-DD") %></span>
+            <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a></div>
             <% }) %>
         </section>
         <%- partial('partial/paginator') %>
