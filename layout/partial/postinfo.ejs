@@ -3,7 +3,13 @@
         <h3 class="panel-title">POST INFO</h3>
     </div>
     <div class="panel-body">
+    <% if(page.author!=null){ %>
+        <strong>作者: </strong><%= page.author %><br>
+    <% }else{ %>
+    <% if(theme.post_copyright.author!=null){ %>
         <strong>作者: </strong><%= theme.post_copyright.author %><br>
+    <% } %>
+    <% } %>
         <strong>发布日期: </strong><%- date(page.date,'YYYY-MM-DD') %><br>
         <strong>标签: </strong>
         <% page.tags.forEach(function(tag){ %>

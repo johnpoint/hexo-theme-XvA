@@ -10,11 +10,14 @@
             </button>
             <a class="navbar-brand" href="/"><%= config.title %></a>
         </div>
-
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
             <ul class="nav navbar-nav">
                 <% for (name in theme.menu) { %>
+                <% if('/'+page.path.replace('/index.html','')==url_for(theme.menu[name])){ %>
+                <li class="active">
+                <% } else { %>
                 <li>
+                <% } %>
                     <a href="<%- url_for(theme.menu[name]) %>"><%= name %></a>
                 </li>
                 <% } %>

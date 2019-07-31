@@ -1,8 +1,14 @@
 <div>
     <ul class="post-copyright">
+    <% if(page.author!=null){ %>
         <li class="post-copyright-author"><strong>本文作者：</strong>
             <%= page.author %>
         </li>
+    <% }else{ %>
+    <li class="post-copyright-author"><strong>本文作者：</strong>
+            <%= theme.post_copyright.author %>
+        </li>
+    <% } %>
         <li class="post-copyright-link"><strong>本文链接：</strong>
             <a href="<% page.permalink %>">
                 <%= page.permalink %>
