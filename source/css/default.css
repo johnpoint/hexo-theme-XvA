@@ -2,6 +2,14 @@ img {
     max-width: 100%;
 }
 
+body {
+    padding-top: 70px;
+}
+
+.post-list {
+    padding-top: 2px;
+}
+
 .post-copyright {
     margin: 2em 0 0;
     padding: 0.5em 1em;
@@ -67,22 +75,10 @@ img {
     background-color: #f5f5f5;
 }
 
-.page-navigator a.prev:before, .page-navigator span.prev:before {
-    font-family: "FontAwesome";
-    content: "<";
-    padding-right: 0.3em;
-}
-
 .page-navigator a.next, .page-navigator span.next {
     height: 35px;
     float: right;
     background-color: #f5f5f5;
-}
-
-.page-navigator a.next:after, .page-navigator span.next:after {
-    font-family: "FontAwesome";
-    content: ">";
-    padding-left: 0.3em;
 }
 
 .page-navigator .current {

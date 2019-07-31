@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <%- partial('partial/head') %>
 
-<body style="padding-top: 70px;">
+<body>
     <%- partial('partial/header') %>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 post-list">
                 <% page.posts.each(function (post) { %>
                 <div class="panel panel-default panel-post">
                     <div class="panel-body">
