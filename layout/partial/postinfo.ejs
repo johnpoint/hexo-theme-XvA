@@ -1,17 +1,17 @@
 <div class="panel panel-info">
     <div class="panel-heading">
-        <h3 class="panel-title">POST INFO</h3>
+        <h3 class="panel-title"><%- __('POST INFO') %></h3>
     </div>
     <div class="panel-body">
     <% if(page.author!=null){ %>
-        <strong>作者: </strong><%= page.author %><br>
+        <strong><%- __('Author: ') %></strong><%= page.author %><br>
     <% }else{ %>
     <% if(theme.post_copyright.author!=null){ %>
-        <strong>作者: </strong><%= theme.post_copyright.author %><br>
+        <strong><%- __('Author: ') %></strong><%= theme.post_copyright.author %><br>
     <% } %>
     <% } %>
-        <strong>发布日期: </strong><%- date(page.date,'YYYY-MM-DD') %><br>
-        <strong>标签: </strong>
+        <strong><%- __('Release date: ') %></strong><%- date(page.date,'YYYY-MM-DD') %><br>
+        <strong><%- __('tags: ') %></strong>
         <% page.tags.forEach(function(tag){ %>
         <a href="/<%= tag.path %>">#<%- tag.name %></a>
         <% }) %>
@@ -20,7 +20,7 @@
 <% if(page.toc){ %>
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title">TOC</h3>
+        <h3 class="panel-title"><%- __('TOC') %></h3>
     </div>
     <div class="panel-body">
         <%- toc(page.content,{class:'post-toc',list_number:true}) %>

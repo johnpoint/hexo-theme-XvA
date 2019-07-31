@@ -1,0 +1,33 @@
+language: node_js
+node_js: stable
+branches:
+  only:
+  - source
+cache:
+  apt: true
+  yarn: true
+  directories:
+    - node_modules
+before_install:
+- git config --global user.name "johnpoint"
+- git config --global user.email "me@lvcshu.com"
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
+- npm install -g hexo-cli
+install:
+- yarn
+script:
+- cd themes && git clone https://github.com/johnpoint/hexo-theme-XvA XvA && mv _config.yml XvA/
+- npm install hexo-generator-feed --save
+- hexo clean
+- hexo generate
+after_success:
+- cd ../
+- mkdir push
+- cd ./push
+- git clone https://github.com/johnpoint/johnpoint.github.io .
+- rm * -rf
+- cp ../public/* . -r
+- git add --all .
+- git commit -m "Travis CI Auto Build"
+- git push --quiet https://$REPO_TOKEN@github.com/johnpoint/johnpoint.github.io master

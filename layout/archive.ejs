@@ -6,7 +6,7 @@
     <div class="container">
         <div class="page-header">
             <% if(page.path.indexOf('tags')==-1){ %>
-            <h1>Archive <small>All articles</small></h1>
+            <h1><%- __('Archives') %> <small><%- __('All articles') %></small></h1>
             <% }else{ %>
             <h1>Tag: <%- page.path.replace('tags/','').replace('/index.html','') %> <small>All articles</small></h1>
             <% } %>

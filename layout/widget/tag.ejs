@@ -1,9 +1,9 @@
 <div class="panel panel-success">
     <div class="panel-heading">
-        <h3 class="panel-title">TAG</h3>
+        <h3 class="panel-title"><%- __('TAG') %></h3>
     </div>
     <div class="panel-body">
         <%- list_tags({amount:theme.widget.tag.count,orderby:'count',order:-1}) %>
-        <a href="/tagscloud">More >></a>
+        <a href="/tagscloud"><%- __('More') %> >></a>
     </div>
 </div>

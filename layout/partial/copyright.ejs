@@ -1,20 +1,20 @@
 <div>
     <ul class="post-copyright">
     <% if(page.author!=null){ %>
-        <li class="post-copyright-author"><strong>本文作者：</strong>
+        <li class="post-copyright-author"><strong><%- __('Author of this article: ') %></strong>
             <%= page.author %>
         </li>
     <% }else{ %>
-    <li class="post-copyright-author"><strong>本文作者：</strong>
+    <li class="post-copyright-author"><strong><%- __('Author of this article: ') %></strong>
             <%= theme.post_copyright.author %>
         </li>
     <% } %>
-        <li class="post-copyright-link"><strong>本文链接：</strong>
+        <li class="post-copyright-link"><strong><%- __('Link to this article: ') %></strong>
             <a href="<% page.permalink %>">
                 <%= page.permalink %>
             </a>
         </li>
-        <li class="post-copyright-license"><strong>版权声明：</strong>
+        <li class="post-copyright-license"><strong><%- __('Copyright Notice: ') %></strong>
             <%- theme.post_copyright.copyright_text %>
         </li>
     </ul>
