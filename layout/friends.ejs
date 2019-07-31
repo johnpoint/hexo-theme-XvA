@@ -15,14 +15,13 @@
                     <div class="panel-body frpanel">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-xs-4">
+                            <div class="col-xs-5">
                                     <% if(item.img==""){ %>
                                     <img class="frimg" src="23333">
                                     <% }else{ %>
                                     <img class="frimg" src="<%- item.img %>">
-                                    <% } %>
-                                </div>
-                                <div class="frtext col-xs-8">
+                                    <% } %></div>
+                                <div class="frtext col-xs-7">
                                     <h4><strong><a href="<%- item.url %>"><%= item.title %></a></strong></h4>
                                     <p><%= item.desc %></p>
                                 </div>
