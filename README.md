@@ -1,4 +1,4 @@
-# <div align="center"><img alt="S" width="56" height="56" src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
+# <div align="center"><img alt="S" width="250" height="250" src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
 
 一个简~~约~~单的 HEXO 主题
 
