@@ -1,5 +1,5 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
-<p align="center"><img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"><img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"></p>
+<p align="center"><img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"></p>
 
 一个简~~约~~单的 HEXO 主题
 
