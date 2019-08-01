@@ -24,7 +24,6 @@ script:
 - npm install hexo-generator-feed --save
 - hexo clean
 - hexo g
-after_success:
 - cd ../
 - mkdir push/
 - cd push/
