@@ -201,3 +201,7 @@ td.gutter {
 nav.navbar.navbar-default.navbar-fixed-top {
     box-shadow: 0 0 8px black;
 }
+
+figure.highlight {
+    overflow-x: auto;
+}
