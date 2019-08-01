@@ -18,7 +18,7 @@ install:
 - yarn
 script:
 - mkdir test && cd test
-- git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io . && git checkout source
+- git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io .
 - cd ../ && mkdir build && cd build && hexo init .
 - cd themes && git clone https://github.com/johnpoint/hexo-theme-XvA XvA
 - cd ../
