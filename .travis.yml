@@ -18,12 +18,12 @@ install:
 - yarn
 script:
 - mkdir test && cd test
-- git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io .
+- git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io . && git checkout source
 - cd ../ && mkdir build && cd build && hexo init .
 - cd themes && git clone https://github.com/johnpoint/hexo-theme-XvA XvA
-- cd ../
-- rm build/source/* -rf && cp source/source/* build/source/ -r
-- cp source/_config.yml build/ && cp source/theme/_config.yml build/themes/XvA && cp source/theme/zh-Cu.yml build/themes/XvA/languages
+- cd ../../
+- rm build/source/* -rf && cp test/source/* build/source/ -r
+- cp test/_config.yml build/ && cp test/theme/_config.yml build/themes/XvA && cp test/theme/zh-Cu.yml build/themes/XvA/languages
 - cd build/ && npm install hexo-generator-feed --save && hexo g
 after_success:
 - mkdir push && cd push
