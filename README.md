@@ -5,6 +5,11 @@
 
 # Contents 目录
 
+- [Install 安装](#Install-安装)
+- [Configuration 配置](#Configuration-配置)
+- [Demo 演示](#Demo-演示)
+- [TODO 待实现](#TODO-待实现)
+
 # Install 安装
 
 ```bash
@@ -87,7 +92,7 @@ tagscloud:
 - [hexo-theme-xva.github.io/](https://hexo-theme-xva.github.io/)
 - [johnpoint's blog](https://blog.lvcshu.com)
 
-# TODO
+# TODO 待实现
 
 - [x] 侧边栏友情链接
 - [x] disqus
