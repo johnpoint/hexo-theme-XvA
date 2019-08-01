@@ -3,6 +3,8 @@
 
 一个简~~约~~单的 HEXO 主题
 
+# Contents 目录
+
 # Install 安装
 
 ```bash
@@ -13,7 +15,7 @@ cp _config.example.yml _config.yml
 
 # Configuration 配置
 
-```yaml
+```yml
 # 导航栏
 menu:
   Home: /
@@ -24,7 +26,7 @@ post_copyright:
   author: 
   copyright_text: 本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
 
-highlight: false # 代码高亮
+fancybox: true
 sitesince: #页脚版权信息，年份 Footer copyright information, filled in the year
 
 # 侧边栏
@@ -79,6 +81,11 @@ tagscloud:
     max: 40 # 最大字体大小 Maximum font size
     unit: px # 字体尺寸单位 Unit of font size
 ```
+
+# Demo 演示
+
+- [hexo-theme-xva.github.io/](https://hexo-theme-xva.github.io/)
+- [johnpoint's blog](https://blog.lvcshu.com)
 
 # TODO
 
