@@ -18,20 +18,16 @@ install:
 - yarn
 script:
 - git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io && cd hexo-theme-XvA.github.io && git checkout source
-- git clone https://github.com/johnpoint/hexo-theme-XvA themes/XvA
-- cp themes/_config.yml themes/XvA/
-- cp themes/zh-Cu.yml themes/XvA/languages/
-- mkdir hexo && cd hexo
-- hexo init .
-- rm _config.yml source themes -rf
+- cd theme/ && git clone https://github.com/johnpoint/hexo-theme-XvA XvA
+- cp _config.yml XvA/
+- cd ../ && mkdir hexo && cd hexo && hexo init . && rm _config.yml source themes -rf
 - cp ../source . -r && cp ../themes . -r && cp ../_config.yml .
 - npm install hexo-generator-feed --save
-- hexo clean
-- hexo generate
-- mkdir push/
-- cd push/ && git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io .
-- rm * -rf
-- cp ../public/* . -r
+- hexo g
+after_success:
+- mkdir push && cd push
+- git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io . && git checkout master
+- rm * -rf && cp ../public/* . -r
 - git add --all .
 - git commit -m "Travis CI Auto Build"
 - git push --quiet https://$REPO_TOKEN@github.com/hexo-theme-XvA/hexo-theme-XvA.github.io master
