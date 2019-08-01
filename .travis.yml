@@ -23,7 +23,7 @@ script:
 - cp themes/zh-Cu.yml themes/XvA/languages
 - npm install hexo-generator-feed --save
 - hexo clean
-- hexo generate
+- hexo g
 after_success:
 - cd ../
 - mkdir push/
