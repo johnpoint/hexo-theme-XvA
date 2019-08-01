@@ -19,7 +19,7 @@ install:
 script:
 - git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io && cd hexo-theme-XvA.github.io && git checkout source
 - git clone https://github.com/johnpoint/hexo-theme-XvA themes/XvA
-- cp themes/config.yml themes/XvA
+- cp themes/_config.yml themes/XvA
 - cp themes/zh-Cu.yml themes/XvA/languages
 - npm install hexo-generator-feed --save
 - hexo clean
