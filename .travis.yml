@@ -17,13 +17,14 @@ before_install:
 install:
 - yarn
 script:
-- mkdir hexo && cd hexo
-- hexo init .
-- rm * -rf
 - git clone https://github.com/hexo-theme-XvA/hexo-theme-XvA.github.io && cd hexo-theme-XvA.github.io && git checkout source
 - git clone https://github.com/johnpoint/hexo-theme-XvA themes/XvA
 - cp themes/_config.yml themes/XvA/
 - cp themes/zh-Cu.yml themes/XvA/languages/
+- mkdir hexo && cd hexo
+- hexo init .
+- rm _config.yml source themes -rf
+- cp ../source . -r && cp ../themes . -r && cp ../_config.yml .
 - npm install hexo-generator-feed --save
 - hexo clean
 - hexo generate
