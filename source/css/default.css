@@ -197,3 +197,7 @@ a.post-title:hover {
 td.gutter {
     width: 36.6px;
 }
+
+nav.navbar.navbar-default.navbar-fixed-top {
+    box-shadow: 0 0 8px black;
+}
