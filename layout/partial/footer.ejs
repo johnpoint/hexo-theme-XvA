@@ -12,6 +12,11 @@
         <script src="//code.jquery.com/jquery-3.3.1.min.js"
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="/js/bootstrap.min.js"></script>
+        <% if(theme.fancybox){ %>
+        <script src="/js/jquery.fancybox.min.js"></script>
+        <script src="/js/wrapImage.js"></script>
+        <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+        <% } %>
         <% if(theme.analytics.google.enable){ %><%- partial('gtag') %><% } %>
         <% if(theme.analytics.busuanzi.enable){ %>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
