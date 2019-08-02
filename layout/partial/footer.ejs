@@ -1,14 +1,5 @@
 <footer>
-        <div id="footer">Copyright © <%- theme.sitesince %> - <%- date(Date.now(), 'YYYY') %> <a href="/."
-                        rel="nofollow"><%- config.title %>.</a> Powered by<a rel="nofollow" target="_blank"
-                        href="https://hexo.io">
-                        Hexo </a> and <a rel="nofollow" target="_blank" href="https://github.com/johnpoint/hexo-theme-XvA">XvA</a>.
-                <% if(theme.analytics.busuanzi.enable){ %>
-                <br><span id="busuanzi_container_site_pv" style='display:none'>
-                        <%= theme.analytics.busuanzi.text.head %> <span id="busuanzi_value_site_pv"></span>
-                        <%= theme.analytics.busuanzi.text.end %>
-                </span><% } %></div>
-        <script src="//code.jquery.com/jquery-3.3.1.min.js"
+<script src="//code.jquery.com/jquery-3.3.1.min.js"
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="/js/bootstrap.min.js"></script>
         <% if(theme.fancybox){ %>
@@ -21,4 +12,13 @@
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
         <% } %>
+        <div id="footer">Copyright © <%- theme.sitesince %> - <%- date(Date.now(), 'YYYY') %> <a href="/."
+                        rel="nofollow"><%- config.title %>.</a><br>Powered by<a rel="nofollow" target="_blank"
+                        href="https://hexo.io">
+                        Hexo </a> and <a rel="nofollow" target="_blank" href="https://github.com/johnpoint/hexo-theme-XvA">XvA</a>.
+                <% if(theme.analytics.busuanzi.enable){ %>
+                <br><span id="busuanzi_container_site_pv" style='display:none'>
+                        <%= theme.analytics.busuanzi.text.head %> <span id="busuanzi_value_site_pv"></span>
+                        <%= theme.analytics.busuanzi.text.end %>
+                </span><% } %></div>
 </footer>
