@@ -1,6 +1,4 @@
 <footer>
-<script src="//code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="/js/bootstrap.min.js"></script>
         <% if(theme.fancybox){ %>
         <script src="/js/jquery.fancybox.min.js"></script>
@@ -10,7 +8,9 @@
         <% if(theme.analytics.google.enable){ %><%- partial('gtag') %><% } %>
         <% if(theme.analytics.busuanzi.enable){ %>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+        <% } %>
+        <% if(theme.totop){ %>
+        <script src="/js/totop.js"></script>
         <% } %>
         <div id="footer">Copyright © <%- theme.sitesince %> - <%- date(Date.now(), 'YYYY') %> <a href="/."
                         rel="nofollow"><%- config.title %>.</a><br>Powered by<a rel="nofollow" target="_blank"

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top"  onclick="a()">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -25,3 +25,8 @@
         </div>
     </div>
 </nav>
+<% if(theme.totop){ %>
+<div class="totop">
+<i class="fas fa-chevron-up fa-2x" onclick="totop()"></i>
+</div>
+<% } %>

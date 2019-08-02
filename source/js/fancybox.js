@@ -1,3 +1,4 @@
+var status = 0;
 $(document).ready(function () {
     $('img').each(function () {
         if ($(this).parent().hasClass('fancybox')) return;

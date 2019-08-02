@@ -31,6 +31,7 @@ post_copyright:
   author: 
   copyright_text: 本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
 
+totop: true
 fancybox: true
 sitesince: #页脚版权信息，年份 Footer copyright information, filled in the year
 
@@ -105,6 +106,7 @@ tagscloud:
 - [x] disqus lazyload
 - [x] 修复手机部分字体不兼容
 - [x] 图片窗口内打开
+- [x] 回到顶部
 - [ ] 加载进度条
 - [ ] 添加动画效果
 - [ ] 不蒜子阅读量统计
