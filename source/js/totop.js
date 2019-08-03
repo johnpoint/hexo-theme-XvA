@@ -12,21 +12,32 @@ function totop() {
     });
 };
 
-$('.totop')[0].style.display = "none";
-
-var topstatus = 0;
-window.onscroll = function (e) {
-    scrollFunc();
-    if (scrollDirection == 'up') {
-        if (isInViewPortOfOne($('.totop')[0]) && topstatus == 1) {
-            topstatus = 0;
-            $('.totop')[0].style.display = "";
-        }
+function judgeIfTop() {
+    var scrollTop = $(this).scrollTop();//滚动条的高度，即页面滚动的高度
+    if (scrollTop == 0) {
+        return true;
+    } else {
+        return false;
     }
-    if (scrollDirection == 'down') {
-        if (isInViewPortOfOne($('.totop')[0]) && topstatus == 0) {
-            topstatus = 1;
-            $('.totop')[0].style.display = "none";
-        }
+}
+
+
+if (judgeIfTop()) {
+    $('.totop')[0].style.display = "none";
+    var topstatus = 0;
+} else {
+    $('.totop')[0].style.display = "";
+    var topstatus = 1;
+}
+
+window.onscroll = function (e) {
+    if (judgeIfTop() && topstatus == 1) {
+        $('.totop')[0].style.display = "none";
+        topstatus = 0;
+    }
+
+    if(!judgeIfTop() && topstatus == 0){
+        $('.totop')[0].style.display = "";
+        topstatus = 1;
     }
 }

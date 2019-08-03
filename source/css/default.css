@@ -210,8 +210,8 @@ figure.highlight {
     right: 20px;
     position: fixed;
     z-index: 99;
-    bottom: 50px;
-    transition-duration: 0.1s;
+    bottom: 20px;
+    transition-duration: 0.5s;
     color: rgba(0, 0, 0, 0.658);
 }
 
