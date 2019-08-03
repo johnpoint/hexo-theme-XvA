@@ -13,6 +13,10 @@
     <% if(theme.comment.disqus.enable || theme.totop){ %>
     <script src="/js/scroll.js"></script>
     <% } %>
+    <% if(theme.loading){ %>
+    <script src="/js/pace.min.js"></script>
+    <link href="/css/pace-theme-flash.css" rel="stylesheet">
+    <% } %>
     <% if(page.title==null){ %>
     <title><%= config.title %></title>
     <% }else{ %>
