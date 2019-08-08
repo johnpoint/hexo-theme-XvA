@@ -10,6 +10,10 @@ body {
     padding-top: 2px;
 }
 
+pre {
+    border-radius: 0px !important;
+}
+
 .post-copyright {
     margin: 2em 0 0;
     padding: 0.5em 1em;
@@ -210,6 +214,15 @@ figure.highlight {
     right: 20px;
     position: fixed;
     z-index: 99;
+    bottom: 50px;
+    transition-duration: 0.5s;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.daynight {
+    right: 20px;
+    position: fixed;
+    z-index: 99;
     bottom: 20px;
     transition-duration: 0.5s;
     color: rgba(0, 0, 0, 0.658);
@@ -217,4 +230,80 @@ figure.highlight {
 
 .totop:hover {
     color: rgba(0, 0, 0, 1);
+}
+
+/*夜间部分*/
+
+body.night {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+body.night a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.night .panel {
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px white;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.night p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+body.night .post-time {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+body.night #footer {
+    color: white;
+}
+
+body.night .tag-list-item {
+    background: none;
+    border: none;
+}
+
+body.night .tag-list-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    background: none !important;
+}
+
+body.night .tag-list-count {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+body.night .frlink {
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.night nav.navbar.navbar-default.navbar-fixed-top {
+    background: #3d3d3d;
+    border: none;
+    box-shadow: 0 0 8px white;
+}
+
+body.night .fas {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+body.night img {
+    filter: brightness(70%);
+}
+
+body.night .post-copyright {
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.night .post {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.night pre {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
 }
