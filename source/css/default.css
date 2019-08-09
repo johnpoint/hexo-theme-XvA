@@ -307,3 +307,15 @@ body.night pre {
     background-color: rgba(0, 0, 0, 0.4);
     color: rgba(255, 255, 255, 0.8);
 }
+
+body.night .page-navigator a.next, .page-navigator span.next, .page-navigator a.prev {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body.night .page-navigator .page-number {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body.night span.page-number.current {
+    color: white;
+}
