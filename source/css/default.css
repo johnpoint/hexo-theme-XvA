@@ -266,7 +266,7 @@ body.night .tag-list-item {
     padding: 0 10px 7px 0;
     font-size: 14px;
     text-transform: uppercase;
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid rgba(0, 0, 0, 0);
     display: inline-block;
 }
 
@@ -322,4 +322,8 @@ body.night .page-navigator .page-number {
 
 body.night span.page-number.current {
     color: white;
+}
+
+body.night blockquote {
+    background: rgba(0, 0, 0, 0.2);
 }
