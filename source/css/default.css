@@ -263,7 +263,11 @@ body.night #footer {
 
 body.night .tag-list-item {
     background: none;
-    border: none;
+    padding: 0 10px 7px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid rgba(0,0,0,0);
+    display: inline-block;
 }
 
 body.night .tag-list-link {
