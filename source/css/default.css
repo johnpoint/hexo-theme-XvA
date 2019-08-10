@@ -124,6 +124,11 @@ ul {
     border-color: #e7e7e7;
 }
 
+.panel-toc {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 .frlink {
     color: rgba(0, 0, 0, 0.6);
     padding: 0 10px 7px 0;
