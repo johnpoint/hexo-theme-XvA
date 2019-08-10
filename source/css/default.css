@@ -388,3 +388,13 @@ body.night .navbar-default .navbar-nav>.active>a:hover {
 body.night .fa-sun {
     text-shadow: 0 0 20px white;
 }
+
+body.night h1, body.night h2, body.night h3, body.night h4, body.night h5, body.night h6 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.night a.post-title:hover {
+    color: rgba(255, 242, 62, 0.705);
+    text-decoration: none;
+    font-size: 19px;
+}
