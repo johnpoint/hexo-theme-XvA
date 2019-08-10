@@ -344,3 +344,7 @@ body.night .page-header>h1>small {
 body.night .page-header>h1 {
     color: rgba(255, 255, 255, 0.8);
 }
+
+body.night .navbar-brand {
+    color: #ffffffa1;
+}
