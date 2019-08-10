@@ -210,6 +210,10 @@ figure.highlight {
     overflow-x: auto;
 }
 
+.highlight>table>tbody>tr>td, .highlight>table>tbody>tr>th, .highlight>table>tfoot>tr>td, .highlight>table>tfoot>tr>th, .highlight>table>thead>tr>td, .highlight>table>thead>tr>th {
+    border-top: none;
+}
+
 .totop {
     right: 20px;
     position: fixed;
