@@ -9,6 +9,8 @@
 - [Configuration 配置](#Configuration-配置)
 - [Demo 演示](#Demo-演示)
 - [TODO 待实现](#TODO-待实现)
+- [Thanks 致谢](#Thanks-致谢)
+- [LICENSE 许可协议](#LICENSE-许可协议)
 
 # Install 安装
 
@@ -116,3 +118,14 @@ tagscloud:
 - [ ] Gitment 支持
 - [ ] 代码高亮优化
 - [ ] 侧边目录优化
+
+# Thanks 致谢
+
+- [twbs/bootstrap](https://github.com/twbs/bootstrap)
+- [jQuery](https://github.com/jquery)
+- [HubSpot/pace](https://github.com/HubSpot/PACE)
+- [hexojs/hexo](https://github.com/hexojs/hexo)
+
+# LICENSE 许可协议
+
+[GNU General Public License v3.0](https://github.com/johnpoint/hexo-theme-XvA/blob/master/LICENSE)
