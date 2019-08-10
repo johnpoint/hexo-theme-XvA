@@ -201,6 +201,7 @@ a.post-title:hover {
 
 .highlight>table {
     width: -webkit-fill-available;
+    margin-bottom: -10px;
 }
 
 td.gutter {
@@ -213,6 +214,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 
 figure.highlight {
     overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .highlight>table>tbody>tr>td, .highlight>table>tbody>tr>th, .highlight>table>tfoot>tr>td, .highlight>table>tfoot>tr>th, .highlight>table>thead>tr>td, .highlight>table>thead>tr>th {
