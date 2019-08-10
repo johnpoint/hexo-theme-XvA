@@ -230,6 +230,11 @@ figure.highlight {
     color: rgba(0, 0, 0, 0.658);
 }
 
+.fa-moon {
+    text-shadow: 0px 0px 20px black;
+    color: white;
+}
+
 .daynight {
     right: 20px;
     position: fixed;
@@ -358,4 +363,28 @@ body.night .page-header>h1 {
 
 body.night .navbar-brand {
     color: #ffffffa1;
+}
+
+body.night .navbar-brand:hover {
+    color: #ffffffd6;
+}
+
+body.night .navbar-default .navbar-nav>li>a {
+    color: #ffffffa1;
+}
+
+body.night .navbar-default .navbar-nav>li>a:hover {
+    color: #ffffffd6;
+}
+
+body.night .navbar-default .navbar-nav>.active>a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.night .navbar-default .navbar-nav>.active>a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+body.night .fa-sun {
+    text-shadow: 0 0 20px white;
 }
