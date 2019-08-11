@@ -7,10 +7,9 @@ var gitalk = new Gitalk({
   clientSecret: '<%- theme.comment.gitalk.oauth.client_secret %>',
   repo: '<%- theme.comment.gitalk.repo %>',
   owner: '<%- theme.comment.gitalk.owner %>',
-  admin: ['<%- theme.comment.gitalk.owner %>'],
+  admin: <% if(theme.comment.gitalk.admin==null){ %>['<%- theme.comment.gitalk.owner %>']<% } else { %><%= theme.comment.gitalk.admin %><% } %>,
   id: '<%- page.title %>',
   distractionFreeMode: false
 })
 gitalk.render('gitalk-container')
 </script>
-
