@@ -24,6 +24,9 @@
                 <hr>
                 <%- partial('partial/disqus') %>
                 <% } %>
+                <% if(theme.comment.gitalk.enable==true && page.comment!=false){ %>
+                <%- partial('partial/gitalk') %>
+                <% } %>
                 <br>
             </div>
             <div class="col-md-3">

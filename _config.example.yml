@@ -36,11 +36,19 @@ friends:
 
 
 # 评论
+# 二选一
 comment:
   disqus:
     enable: false
     shortname: 
     lazyload: false
+  gitalk:
+    enable: false
+    owner:
+    repo:
+    oauth:
+      client_id:
+      client_secret:
 
 # 网站统计
 analytics:

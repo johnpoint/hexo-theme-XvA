@@ -1,5 +1,5 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
-<p align="center"><img src="https://img.shields.io/badge/Version-1.1.9-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-1.2.0-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
 
 一个简~~约~~单的 HEXO 主题
 
@@ -33,6 +33,7 @@ post_copyright:
   author: 
   copyright_text: 本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
 
+loading: false
 totop: true
 fancybox: true
 sitesince: #页脚版权信息，年份 Footer copyright information, filled in the year
@@ -60,11 +61,19 @@ friends:
 
 
 # 评论
+# 二选一
 comment:
   disqus:
     enable: false
     shortname: 
     lazyload: false
+  gitalk:
+    enable: false
+    owner:
+    repo:
+    oauth:
+      client_id:
+      client_secret:
 
 # 网站统计
 analytics:
@@ -113,11 +122,11 @@ tagscloud:
 - [x] 夜间模式
 - [x] 代码高亮优化
 - [x] 侧边目录优化
+- [x] ~~Gitment~~ Gitalk 支持
 - [ ] 添加动画效果
 - [ ] 不蒜子阅读量统计
 - [ ] 多语言支持
 - [ ] 一言 支持
-- [ ] Gitment 支持
 
 # Thanks 致谢
 
