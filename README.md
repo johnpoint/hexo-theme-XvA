@@ -74,6 +74,8 @@ comment:
     oauth:
       client_id:
       client_secret:
+    admin:
+#     - johnpoint
 
 # 网站统计
 analytics:
