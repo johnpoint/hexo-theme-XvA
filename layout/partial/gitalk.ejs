@@ -7,7 +7,7 @@ var gitalk = new Gitalk({
   clientSecret: '<%- theme.comment.gitalk.oauth.client_secret %>',
   repo: '<%- theme.comment.gitalk.repo %>',
   owner: '<%- theme.comment.gitalk.owner %>',
-  admin: <% if(theme.comment.gitalk.admin==null){ %>['<%- theme.comment.gitalk.owner %>']<% } else { %>[<% for(var i = 0;i<theme.comment.gitalk.admin.lenght;i++){ %>,"<%- theme.comment.gitalk.admin[i] %>"<% } %>]<% } %>,
+  admin: <% if(theme.comment.gitalk.admin==null){ %>['<%- theme.comment.gitalk.owner %>']<% } else { %>[<% theme.comment.gitalk.admin.forEach(function(item){ %>,"<%- item %>"<% }) %>]<% } %>,
   id: '<%- page.title %>',
   distractionFreeMode: false
 })
