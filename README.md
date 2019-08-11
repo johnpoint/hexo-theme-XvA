@@ -60,14 +60,14 @@ friends:
       page: false # 在独立页面显示 Displayed on a separate page
 
 
-# 评论
-# 二选一
+# 评论 二选一
+# pick one of two
 comment:
   disqus:
     enable: false
     shortname: 
     lazyload: false
-  gitalk:
+  gitalk: # See https://github.com/gitalk/gitalk#Install
     enable: false
     owner:
     repo:
@@ -134,6 +134,7 @@ tagscloud:
 - [jQuery](https://github.com/jquery)
 - [HubSpot/pace](https://github.com/HubSpot/PACE)
 - [hexojs/hexo](https://github.com/hexojs/hexo)
+- [gitalk/gitalk](https://github.com/gitalk/gitalk)
 
 # LICENSE 许可协议
 

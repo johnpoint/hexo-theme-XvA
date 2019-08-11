@@ -35,14 +35,14 @@ friends:
       page: false # 在独立页面显示 Displayed on a separate page
 
 
-# 评论
-# 二选一
+# 评论 二选一
+# pick one of two
 comment:
   disqus:
     enable: false
     shortname: 
     lazyload: false
-  gitalk:
+  gitalk: # See https://github.com/gitalk/gitalk#Install
     enable: false
     owner:
     repo:
