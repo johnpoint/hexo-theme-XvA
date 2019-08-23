@@ -57,6 +57,9 @@ analytics:
   google:
     enable: false
     id: #UA-xxxxxx-x
+  51LA:
+    enable: false
+    script: 
   busuanzi: # 不蒜子网站统计
     enable: false
     text:
