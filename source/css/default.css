@@ -248,6 +248,12 @@ figure.highlight {
     color: rgba(0, 0, 0, 1);
 }
 
+.panel-disqus {
+    background: rgba(0, 0, 0, 0.0);
+    border-color: rgba(0, 0, 0, 0.0);
+    color: rgba(255, 255, 255, 0.8)
+}
+
 /*夜间部分*/
 
 body.night {
@@ -397,4 +403,10 @@ body.night a.post-title:hover {
     color: rgba(255, 242, 62, 0.705);
     text-decoration: none;
     font-size: 19px;
+}
+
+body.night .panel-disqus {
+    background: rgba(0, 0, 0, 0.0);
+    border-color: rgba(0, 0, 0, 0.0);
+    color: rgba(255, 255, 255, 0.8)
 }
