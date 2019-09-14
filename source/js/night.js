@@ -13,12 +13,14 @@ function daynight() {
         darkmode = "night";
         document.cookie = "darkmode=night;path=/;";
         $('body').addClass('night');
+        $('html').addClass('night');
         $('.fa-moon')[0].style.display = "none";
         $('.fa-sun')[0].style.display = "";
     } else {
         darkmode = "day";
         document.cookie = "darkmode=day;path=/;";
         $('body').removeClass('night');
+        $('html').removeClass('night');
         $('.fa-moon')[0].style.display = "";
         $('.fa-sun')[0].style.display = "none";
     }
@@ -29,6 +31,7 @@ if (darkmode == "") {
 } else {
     if (darkmode == "night") {
         $('body').addClass('night');
+        $('html').addClass('night');
         $('.fa-moon')[0].style.display = "none";
     } else {
         $('.fa-sun')[0].style.display = "none";

@@ -426,7 +426,7 @@ body.night .panel-disqus {
     color: rgba(255, 255, 255, 0.8)
 }
 
-body.night html {
+html.night {
     height: 100%;
     background-color: black !important;
 }
