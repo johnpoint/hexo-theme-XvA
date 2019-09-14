@@ -15,7 +15,6 @@ html {
 section#navv {
     height: 80px;
     background-color: white;
-    z-index: 999;
 }
 
 section#main {
@@ -226,6 +225,7 @@ td.gutter {
 
 nav.navbar.navbar-default {
     box-shadow: 0 0 8px black;
+    z-index: 999;
 }
 
 figure.highlight {
