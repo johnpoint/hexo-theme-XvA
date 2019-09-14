@@ -1,7 +1,7 @@
 var c = document.cookie.split(';');
 for (let index = 0; index < c.length; index++) {
-    c[index] = c[index].split('=');
-}
+    c[index] = c[index].split('=')
+};
 var darkmode = "";
 for (let index = 0; index < c.length; index++) {
     if (c[index][0].replace(' ', '') == "darkmode") {
@@ -24,7 +24,7 @@ function daynight() {
         $('.fa-moon')[0].style.display = "";
         $('.fa-sun')[0].style.display = "none";
     }
-}
+};
 if (darkmode == "") {
     darkmode = "day";
     $('.fa-moon')[0].style.display = "none";
