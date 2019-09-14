@@ -428,7 +428,7 @@ body.night .panel-disqus {
 
 body.night html {
     height: 100%;
-    background-color: black;
+    background-color: black !important;
 }
 
 body.night section#navv {
