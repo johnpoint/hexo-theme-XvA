@@ -2,27 +2,31 @@
 <%- partial('partial/head') %>
 
 <body>
-    <%- partial('partial/header') %>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 post-list">
-                <% page.posts.each(function (post) { %>
-                <div class="panel panel-default panel-post">
-                    <div class="panel-body">
-                        <h3><a href="<%- url_for(post.path) %>"><%= post.title %></a><small class="post-time">
-                                <%- date(post.date, "YYYY-MM-DD") %></small></h3>
-                        <small><%- post.excerpt %></small>
-                        <a class="btn btn-sm" href="<%- url_for(post.path) %>"><%- __('readmore') %></a>
+    <section id="navv">
+        <%- partial('partial/header') %>
+    </section>
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 post-list">
+                    <% page.posts.each(function (post) { %>
+                    <div class="panel panel-default panel-post">
+                        <div class="panel-body">
+                            <h3><a href="<%- url_for(post.path) %>"><%= post.title %></a><small class="post-time">
+                                    <%- date(post.date, "YYYY-MM-DD") %></small></h3>
+                            <small><%- post.excerpt %></small>
+                            <a class="btn btn-sm" href="<%- url_for(post.path) %>"><%- __('readmore') %></a>
+                        </div>
                     </div>
+                    <% }) %>
+                    <%- partial('partial/paginator') %>
+                    <br>
                 </div>
-                <% }) %>
-                <%- partial('partial/paginator') %>
-                <br>
-            </div>
-            <div class="col-md-3">
-                <%- partial('partial/sidebar') %>
+                <div class="col-md-3">
+                    <%- partial('partial/sidebar') %>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <%- partial('partial/footer') %>
 </body>

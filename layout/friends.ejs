@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <%- partial('partial/head') %>
 
-<body style="padding-top: 70px;">
-    <%- partial('partial/header') %>
-    <div class="container">
-        <div class="page-header">
-            <h1><%- theme.friends.pagetitle %> <small>friends</small></h1>
-        </div>
-        <div class="row">
-            <% theme.friends.list.forEach(function(item){ %>
-            <% if(item.page==true){ %>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body frpanel">
-                        <div class="container-fluid">
-                            <div class="row">
-                            <div class="col-xs-5">
-                                    <% if(item.img==""){ %>
-                                    <img class="frimg" src="23333">
-                                    <% }else{ %>
-                                    <img class="frimg" src="<%- item.img %>">
-                                    <% } %></div>
-                                <div class="frtext col-xs-7">
-                                    <h4><strong><a href="<%- item.url %>"><%= item.title %></a></strong></h4>
-                                    <p><%= item.desc %></p>
+<body>
+    <section id="navv">
+        <%- partial('partial/header') %>
+    </section>
+    <section id="main">
+        <div class="container">
+            <div class="page-header">
+                <h1><%- theme.friends.pagetitle %> <small>friends</small></h1>
+            </div>
+            <div class="row">
+                <% theme.friends.list.forEach(function(item){ %>
+                <% if(item.page==true){ %>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body frpanel">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <% if(item.img==""){ %>
+                                        <img class="frimg" src="23333">
+                                        <% }else{ %>
+                                        <img class="frimg" src="<%- item.img %>">
+                                        <% } %></div>
+                                    <div class="frtext col-xs-7">
+                                        <h4><strong><a href="<%- item.url %>"><%= item.title %></a></strong></h4>
+                                        <p><%= item.desc %></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <% } %>
+                <% }) %>
+                <hr>
+                <%- partial('partial/disqus') %>
             </div>
-            <% } %>
-            <% }) %>
-            <hr>
-            <%- partial('partial/disqus') %>
+            <br>
         </div>
-        <br>
-    </div>
+    </section>
     <%- partial('partial/footer') %>
 </body>

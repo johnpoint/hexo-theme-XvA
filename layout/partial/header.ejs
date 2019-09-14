@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top"  onclick="a()">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -15,9 +15,9 @@
                 <% for (name in theme.menu) { %>
                 <% if('/'+page.path.replace('/index.html','')==url_for(theme.menu[name])){ %>
                 <li class="active">
-                <% } else { %>
+                    <% } else { %>
                 <li>
-                <% } %>
+                    <% } %>
                     <a href="<%- url_for(theme.menu[name]) %>"><%= __(name) %></a>
                 </li>
                 <% } %>
@@ -25,12 +25,13 @@
         </div>
     </div>
 </nav>
+
 <% if(theme.totop){ %>
 <div class="totop">
-<i class="fas fa-angle-double-up fa-3x" onclick="totop()"></i>
+    <i class="fas fa-angle-double-up fa-3x" onclick="totop()"></i>
 </div>
 <div class="daynight">
-<i class="fas fa-moon fa-2x" onclick="daynight()"></i>
-<i class="fas fa-sun fa-2x" onclick="daynight()"></i>
+    <i class="fas fa-moon fa-2x" onclick="daynight()"></i>
+    <i class="fas fa-sun fa-2x" onclick="daynight()"></i>
 </div>
 <% } %>
