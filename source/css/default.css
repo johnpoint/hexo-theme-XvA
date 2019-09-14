@@ -15,6 +15,7 @@ html {
 section#navv {
     height: 80px;
     background-color: white;
+    z-index: 999;
 }
 
 section#main {
@@ -399,7 +400,7 @@ body.night .navbar-default .navbar-nav>li>a:hover {
 }
 
 body.night .navbar-default .navbar-nav>.active>a {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgb(53, 53, 53);
 }
 
 body.night .navbar-default .navbar-nav>.active>a:hover {
