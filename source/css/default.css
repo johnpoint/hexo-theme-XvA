@@ -481,11 +481,6 @@ body.night .pace .pace-activity {
     animation: pace-spinner 400ms linear infinite;
 }
 
-body.night .totop {
-    right: 20px;
-    position: fixed;
-    z-index: 99;
-    bottom: 50px;
-    transition-duration: 0.5s;
-    color: white;
+body.night .fas {
+    color: rgba(255, 255, 255, 0.8);
 }
