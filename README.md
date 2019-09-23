@@ -1,5 +1,5 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
-<p align="center"><img src="https://img.shields.io/badge/Version-1.3.22-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-1.3.23-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
 
 一个简~~约~~单的 HEXO 主题
 
@@ -127,12 +127,12 @@ tagscloud:
 - [x] 加载进度条
 - [x] 夜间模式
 - [x] 代码高亮优化
-- [x] 侧边目录优化
 - [x] ~~Gitment~~ Gitalk 支持
 - [ ] 添加动画效果
 - [ ] 不蒜子阅读量统计
 - [ ] 多语言支持
 - [ ] 一言 支持
+- [ ] 侧边目录优化
 
 # Thanks 致谢
 
