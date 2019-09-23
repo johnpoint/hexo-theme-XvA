@@ -1,5 +1,5 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
-<p align="center"><img src="https://img.shields.io/badge/Version-1.3.23-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-1.3.24-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
 
 一个简~~约~~单的 HEXO 主题
 
@@ -22,9 +22,9 @@ cp _config.example.yml _config.yml
 
 # 版本号规范
 
-大版本 . 新功能 . 小修复
+大版本 . 新功能 . 小修改
 
-当 `小修复` 序号上升时无需进行配置文件的更新只需更新代码，其他数字更新时需要检查配置文件的更新 
+当 `小修改` 序号上升时无需进行配置文件的更新只需更新代码，其他数字更新时需要检查配置文件的更新 
 
 # Configuration 配置
 
