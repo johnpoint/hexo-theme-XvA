@@ -20,6 +20,12 @@ cd themes/XvA
 cp _config.example.yml _config.yml
 ```
 
+# 版本号规范
+
+大版本 . 新功能 . 小修复
+
+当 `小修复` 序号上升时无需进行配置文件的更新只需更新代码，其他数字更新时需要检查配置文件的更新 
+
 # Configuration 配置
 
 ```yml
