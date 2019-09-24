@@ -13,7 +13,7 @@ html {
 }
 
 section#navv {
-    height: 80px;
+    height: 80px !important;
     background-color: white;
     position: fixed;
     width: 100%;
