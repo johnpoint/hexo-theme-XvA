@@ -5,10 +5,18 @@
     <section id="navv">
         <%- partial('partial/header') %>
     </section>
-    <section id="main" style="padding-top: 40px">
+    <section id="main">
         <div class="container">
             <div class="row">
                 <div class="col-md-9 post-list">
+                    <% if(theme.yiyan){ %>
+                    <div class="panel panel-default">
+                        <div class="panel-body" style="color:rgb(158, 158, 158)">
+                            <span id="jinrishici-sentence">正在加载今日诗词....</span>
+                            <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                    <% } %>
                     <% page.posts.each(function (post) { %>
                     <div class="panel panel-default panel-post">
                         <div class="panel-body">
