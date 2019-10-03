@@ -148,6 +148,7 @@ tagscloud:
 - [HubSpot/pace](https://github.com/HubSpot/PACE)
 - [hexojs/hexo](https://github.com/hexojs/hexo)
 - [gitalk/gitalk](https://github.com/gitalk/gitalk)
+- [古诗词·一言API](https://www.jinrishici.com)
 
 # LICENSE 许可协议
 
