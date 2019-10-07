@@ -6,6 +6,7 @@
 # Contents 目录
 
 - [Install 安装](#Install-安装)
+- [Version number specification 版本号规范](#Version number specification-版本号规范)
 - [Configuration 配置](#Configuration-配置)
 - [Demo 演示](#Demo-演示)
 - [TODO 待实现](#TODO-计划)
@@ -20,7 +21,7 @@ cd themes/XvA
 cp _config.example.yml _config.yml
 ```
 
-# 版本号规范
+# Version number specification 版本号规范
 
 大版本 . 新功能 . 小修改
 
