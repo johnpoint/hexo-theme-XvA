@@ -20,7 +20,7 @@
                     <% page.posts.each(function (post) { %>
                     <div class="panel panel-default panel-post">
                         <div class="panel-body">
-                            <h3><a href="<%- url_for(post.path) %>"><%= post.title %></a><small class="post-time">
+                            <h3 class="posttitle"><a href="<%- url_for(post.path) %>"><%= post.title %></a><small class="post-time">
                                     <%- date(post.date, "YYYY-MM-DD") %></small></h3>
                             <small><%- post.excerpt %></small>
                             <a class="btn btn-sm" href="<%- url_for(post.path) %>"><%- __('readmore') %></a>

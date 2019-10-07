@@ -1,5 +1,5 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
-<p align="center"><img src="https://img.shields.io/badge/Version-1.4.1-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-1.4.2-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
 
 一个简~~约~~单的 HEXO 主题
 
@@ -149,6 +149,13 @@ tagscloud:
 - [hexojs/hexo](https://github.com/hexojs/hexo)
 - [gitalk/gitalk](https://github.com/gitalk/gitalk)
 - [古诗词·一言API](https://www.jinrishici.com)
+
+- 字体
+  - [方正兰亭纤黑](http://www.foundertype.com/index.php/FontInfo/index/id/216.html) (不包含在项目中，须自行获取授权)
+  - [方正粗金陵](http://www.foundertype.com/index.php/FontInfo/index/id/202) (不包含在项目中，须自行获取授权)
+  - Times New Roman
+  - Times
+  - serif
 
 # LICENSE 许可协议
 

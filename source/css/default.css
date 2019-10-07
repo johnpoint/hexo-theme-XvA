@@ -489,3 +489,7 @@ body.night .pace .pace-activity {
 body.night .fas {
     color: rgba(255, 255, 255, 0.8);
 }
+
+.posttitle {
+    font-family: "Times New Roman", Times, "FZXiJinLJW", serif;
+}
