@@ -24,7 +24,7 @@
                 <% } %>
                 <div class="archives-post-content">
                     <span class="post-date"><%= date(post.date, "MM-DD") %></span>
-                    <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a></div>
+                    <a class="post-title posttitle" href="<%- url_for(post.path) %>"><%= post.title %></a></div>
                 <% }) %>
             </section>
             <%- partial('partial/paginator') %>
