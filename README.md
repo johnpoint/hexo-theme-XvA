@@ -9,6 +9,7 @@
 - [Version number specification 版本号规范](#Version-number-specification-版本号规范)
 - [Configuration 配置](#Configuration-配置)
 - [Demo 演示](#Demo-演示)
+- [Font 字体](#Font-字体)
 - [TODO 待实现](#TODO-计划)
 - [Thanks 致谢](#Thanks-致谢)
 - [LICENSE 许可协议](#LICENSE-许可协议)
@@ -116,6 +117,10 @@ tagscloud:
 
 - [hexo-theme-xva.github.io/](https://hexo-theme-xva.github.io/)
 - [johnpoint's blog](https://blog.lvcshu.com)
+
+# Font 字体
+
+参见 [配置CORS小记](https://blog.lvcshu.com/2019/10/07/配置CORS小记/)
 
 # TODO 待实现
 
