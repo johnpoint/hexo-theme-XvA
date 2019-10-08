@@ -21,7 +21,7 @@ cd themes/XvA
 cp _config.example.yml _config.yml
 ```
 
-# Version number specification 版本号规范
+# Version 版本号
 
 大版本 . 新功能 . 小修改
 
