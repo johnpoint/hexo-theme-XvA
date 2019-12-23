@@ -1,14 +1,14 @@
 <div>
     <ul class="post-copyright">
-    <% if(page.author!=null){ %>
+        <% if(page.author!=null){ %>
         <li class="post-copyright-author"><strong><%- __('Author of this article: ') %></strong>
             <%= page.author %>
         </li>
-    <% }else{ %>
-    <li class="post-copyright-author"><strong><%- __('Author of this article: ') %></strong>
+        <% }else{ %>
+        <li class="post-copyright-author"><strong><%- __('Author of this article: ') %></strong>
             <%= theme.post_copyright.author %>
         </li>
-    <% } %>
+        <% } %>
         <li class="post-copyright-link"><strong><%- __('Link to this article: ') %></strong>
             <a href="<% page.permalink %>">
                 <%= page.permalink %>
@@ -17,5 +17,10 @@
         <li class="post-copyright-license"><strong><%- __('Copyright Notice: ') %></strong>
             <%- theme.post_copyright.copyright_text %>
         </li>
+        <% if(page.pressone!=null){ %>
+        <li class="post-pressone">
+            <strong><a href="<%= page.pressone %>">>> <%- __('signature') %> <<</a></strong>
+        </li>
+        <% } %>
     </ul>
 </div>
