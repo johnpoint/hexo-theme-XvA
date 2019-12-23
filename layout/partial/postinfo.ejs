@@ -3,18 +3,21 @@
         <h3 class="panel-title"><%- __('POST INFO') %></h3>
     </div>
     <div class="panel-body">
-    <% if(page.author!=null){ %>
+        <% if(page.author!=null){ %>
         <strong><%- __('Author: ') %></strong><%= page.author %><br>
-    <% }else{ %>
-    <% if(theme.post_copyright.author!=null){ %>
+        <% }else{ %>
+        <% if(theme.post_copyright.author!=null){ %>
         <strong><%- __('Author: ') %></strong><%= theme.post_copyright.author %><br>
-    <% } %>
-    <% } %>
+        <% } %>
+        <% } %>
         <strong><%- __('Release date: ') %></strong><%- date(page.date,'YYYY-MM-DD') %><br>
         <strong><%- __('tags: ') %></strong>
         <% page.tags.forEach(function(tag){ %>
         <a href="/<%= tag.path %>">#<%- tag.name %></a>
         <% }) %>
+        <% if(page.pressone!=null){ %>
+            <br><strong><a href="<%= page.pressone %>">>> <%- __('signature') %> <<</a></strong>
+        <% } %>
     </div>
 </div>
 <% if(page.toc){ %>
