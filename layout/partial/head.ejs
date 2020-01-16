@@ -17,4 +17,13 @@
     <% }else{ %>
     <title><%= page.title %> | <%= config.title %></title>
     <% } %>
+    <% if(theme.AdSense.enable){ %>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "<%= theme.AdSense.google_ad_client %>",
+            enable_page_level_ads: true
+        });
+    </script>
+    <% } %>
 </head>

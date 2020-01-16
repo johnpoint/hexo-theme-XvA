@@ -78,3 +78,7 @@ tagscloud:
     min: 20 # 最小字体大小 Minimal font size
     max: 40 # 最大字体大小 Maximum font size
     unit: px # 字体尺寸单位 Unit of font size
+
+AdSense:
+  enable: false
+  google_ad_client: 
