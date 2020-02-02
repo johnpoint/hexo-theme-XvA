@@ -13,7 +13,7 @@
         <strong><%- __('Release date: ') %></strong><%- date(page.date,'YYYY-MM-DD') %><br>
         <strong><%- __('tags: ') %></strong>
         <% page.tags.forEach(function(tag){ %>
-        <a href="/<%= tag.path %>">#<%- tag.name %></a>
+        <a href="/<%= tag.path %>" style="color: black;"></style>><i class="fa fa-tag" aria-hidden="true"></i><%- tag.name %></a>
         <% }) %>
         <% if(page.pressone!=null){ %>
             <br><strong><a href="<%= page.pressone %>">>> <%- __('signature') %> <<</a></strong>
