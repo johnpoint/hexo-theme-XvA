@@ -12,20 +12,17 @@
         <% } %>
         <strong><%- __('Release date: ') %></strong><%- date(page.date,'YYYY-MM-DD') %><br>
         <% page.tags.forEach(function(tag){ %>
-        <a href="/<%= tag.path %>" style="color: black;"></style><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
+        <a href="/<%= tag.path %>" style="color: black;"></style><i class="fa fa-tag"
+                aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
         <% }) %>
         <% if(page.pressone!=null){ %>
-            <br><strong><a href="<%= page.pressone %>"><i class="fa fa-certificate" aria-hidden="true"></i>&nbsp;<%- __('signature') %></a></strong>
+        <br><strong><a href="<%= page.pressone %>"><i class="fa fa-certificate"
+                    aria-hidden="true"></i>&nbsp;<%- __('signature') %></a></strong>
         <% } %>
     </div>
 </div>
 <% if(page.toc){ %>
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h3 class="panel-title"><%- __('TOC') %></h3>
-    </div>
-    <div class="panel-body panel-toc">
-        <%- toc(page.content,{class:'post-toc',list_number:true}) %>
-    </div>
-</div>
+
+<%- toc(page.content,{class:'post-toc',list_number:true}) %>
+
 <% } %>
