@@ -23,9 +23,9 @@
                             <h3 class="posttitle"><a href="<%- url_for(post.path) %>"><%= post.title %></a><small
                                     class="post-time">
                                     <%- date(post.date, "YYYY-MM-DD") %></small></h3>
-                            <small><%- post.excerpt %></small>
+                            <small><%- post.excerpt %></small><br>
                             <% post.tags.forEach(function(tag){ %>
-                            <a href="/<%= tag.path %>" style="color: rgba(0,0,0,0.8);"></style><i class="fa fa-tag"
+                            <a href="/<%= tag.path %>" style="color: rgba(0,0,0,0.4);font-size: 0.9em;"></style><i class="fa fa-tag"
                                     aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
                             <% }) %>
                         </div>
