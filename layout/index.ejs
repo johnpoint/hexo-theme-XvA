@@ -24,10 +24,12 @@
                                     class="post-time">
                                     <%- date(post.date, "YYYY-MM-DD") %></small></h3>
                             <small><%- post.excerpt %></small><br>
-                            <% post.tags.forEach(function(tag){ %>
-                            <a href="/<%= tag.path %>" style="color: rgba(0,0,0,0.4);font-size: 0.9em;"></style><i class="fa fa-tag"
-                                    aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
-                            <% }) %>
+                            <div class="indexPostTag">
+                                <% post.tags.forEach(function(tag){ %>
+                                <a href="/<%= tag.path %>" style="color: rgba(0,0,0,0.4);font-size: 0.9em;"></style><i
+                                        class="fa fa-tag" aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
+                                <% }) %>
+                            </div>
                         </div>
                     </div>
                     <% }) %>
