@@ -9,7 +9,7 @@
         <% } %>
         <strong><%- __('Release date: ') %></strong><%- date(page.date,'YYYY-MM-DD') %><br>
         <% page.tags.forEach(function(tag){ %>
-        <a href="/<%= tag.path %>" style="color: black;"></style><i class="fa fa-tag"
+        <a href="/<%= tag.path %>"></style><i class="fa fa-tag"
                 aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
         <% }) %>
         <% if(page.pressone!=null){ %>
