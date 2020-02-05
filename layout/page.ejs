@@ -11,33 +11,43 @@
             <div class="row">
                 <div class="ol-md-9">
                     <% } %>
-                    <article class="post">
-                        <div class="post-title posttitle">
-                            <div class="page-header">
-                                <h1><%= __(page.title) %> <small><%- __(page.description) %></small></h1>
-                            </div>
+                    <% if(page.toc){ %>
+                    <div class="row">
+                        <div class="ol-md-9">
+                            <% } %>
+                            <article class="post">
+                                <div class="post-title posttitle">
+                                    <div class="page-header">
+                                        <h1><%= __(page.title) %> <small><%- __(page.description) %></small></h1>
+                                    </div>
+                                </div>
+                                <% if(page.layout=="tagscloud"){ %>
+                                <%- partial('partial/tagscloud') %>
+                                <% } else { %>
+                                <div class="post-content">
+                                    <%- page.content %>
+                                </div>
+                                <% } %>
+                            </article>
+                            <% if(theme.comment.disqus.enable==true && page.comment!=false){ %>
+                            <hr>
+                            <%- partial('partial/disqus') %>
+                            <% } %>
                         </div>
-                        <% if(page.layout=="tagscloud"){ %>
-                        <%- partial('partial/tagscloud') %>
-                        <% } else { %>
-                        <div class="post-content">
-                            <%- page.content %>
+                        <% if(page.sidebar){ %>
+                        <br>
+                        <div class="col-md-3">
+                            <%- partial('partial/sidebar') %>
                         </div>
                         <% } %>
-                    </article>
-                    <% if(theme.comment.disqus.enable==true && page.comment!=false){ %>
-                    <hr>
-                    <%- partial('partial/disqus') %>
-                    <% } %>
+                        <% if(page.toc){ %>
+                        <br>
+                        <div class="col-md-3">
+                            <%- toc(page.content,{class:'post-toc',list_number:true}) %>
+                        </div>
+                        <% } %>
+                    </div>
                 </div>
-                <% if(page.sidebar){ %>
-                <br>
-                <div class="col-md-3">
-                    <%- partial('partial/sidebar') %>
-                </div>
-                <% } %>
-            </div>
-        </div>
     </section>
     <%- partial('partial/footer') %>
 </body>
