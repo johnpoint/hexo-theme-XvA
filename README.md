@@ -155,6 +155,7 @@ tagscloud:
 - [hexojs/hexo](https://github.com/hexojs/hexo)
 - [gitalk/gitalk](https://github.com/gitalk/gitalk)
 - [古诗词·一言API](https://www.jinrishici.com)
+- [iconfont](https://www.iconfont.cn/)
 
 - 字体
   - [方正兰亭纤黑](http://www.foundertype.com/index.php/FontInfo/index/id/216.html) (不包含在项目中，须自行获取授权)
