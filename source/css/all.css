@@ -5076,13 +5076,11 @@ figure.highlight {
 }
 
 .icon-moon {
-    color: #fff;
-    text-shadow: 0 0 20px #000
+    color: #000;
 }
 
 .icon-Sun {
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 20px rgb(255, 255, 255)
 }
 
 .totop>.iconfont {
