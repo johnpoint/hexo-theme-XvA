@@ -5125,7 +5125,7 @@ body.night {
 }
 
 body.night .panel, body.night a {
-    color: hsla(0, 0%, 100%, .8)
+    color: hsla(0, 0%, 100%, .8) !important
 }
 
 body.night .panel {
