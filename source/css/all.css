@@ -5071,6 +5071,29 @@ figure.highlight {
     transition-duration: .5s
 }
 
+.daynight>.iconfont {
+    font-size: 2em;
+}
+
+.icon-moon {
+    color: #fff;
+    text-shadow: 0 0 20px #000
+}
+
+.icon-Sun {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgb(255, 255, 255)
+}
+
+.totop>.iconfont {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+body.night .totop>.iconfont {
+    color: #fff;
+}
+
 .fa-moon {
     color: #fff;
     text-shadow: 0 0 20px #000

@@ -14,26 +14,26 @@ function daynight() {
         document.cookie = "darkmode=night;path=/;";
         $('body').addClass('night');
         $('html').addClass('night');
-        $('.fa-moon')[0].style.display = "none";
-        $('.fa-sun')[0].style.display = "";
+        $('.icon-moon')[0].style.display = "none";
+        $('.icon-Sun')[0].style.display = "";
     } else {
         darkmode = "day";
         document.cookie = "darkmode=day;path=/;";
         $('body').removeClass('night');
         $('html').removeClass('night');
-        $('.fa-moon')[0].style.display = "";
-        $('.fa-sun')[0].style.display = "none";
+        $('.icon-moon')[0].style.display = "";
+        $('.icon-Sun')[0].style.display = "none";
     }
 };
 if (darkmode == "") {
     darkmode = "day";
-    $('.fa-moon')[0].style.display = "none";
+    $('.icon-moon')[0].style.display = "none";
 } else {
     if (darkmode == "night") {
         $('body').addClass('night');
         $('html').addClass('night');
-        $('.fa-moon')[0].style.display = "none";
+        $('.icon-moon')[0].style.display = "none";
     } else {
-        $('.fa-sun')[0].style.display = "none";
+        $('.icon-Sun')[0].style.display = "none";
     }
 }
