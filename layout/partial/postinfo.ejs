@@ -9,10 +9,10 @@
         <% } %>
         <strong><%- __('Release date: ') %></strong><%- date(page.date,'YYYY-MM-DD') %><br>
         <% page.tags.forEach(function(tag){ %>
-        <a href="/<%= tag.path %>"></style><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
+        <a href="/<%= tag.path %>"></style><i class="iconfont icon-tag" aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
         <% }) %>
         <% if(page.pressone!=null){ %>
-        <br><a href="<%= page.pressone %>"><i class="fa fa-certificate"
+        <br><a href="<%= page.pressone %>"><i class="iconfont icon-certificate"
                 aria-hidden="true"></i>&nbsp;<%- __('signature') %></a>
         <% } %>
     </div>
