@@ -5213,6 +5213,7 @@ body.night span.page-number.current {
 }
 
 body.night blockquote {
+    border-bottom: 1px solid;
     background: rgba(0, 0, 0, .2)
 }
 
