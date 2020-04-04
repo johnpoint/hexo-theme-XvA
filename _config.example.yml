@@ -14,6 +14,11 @@ fancybox: true
 sitesince: #页脚版权信息，年份 Footer copyright information, filled in the year
 yiyan: false #一言 https://www.jinrishici.com
 
+bigimg: #首页巨幕图片
+  enable: false
+  imgurl:
+  text:
+
 # 侧边栏
 # sidebar
 widget:
@@ -82,3 +87,5 @@ tagscloud:
 AdSense:
   enable: false
   google_ad_client: 
+
+version: 3.3.0

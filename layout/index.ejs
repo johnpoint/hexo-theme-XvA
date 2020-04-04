@@ -5,6 +5,11 @@
     <section id="navv">
         <%- partial('partial/header') %>
     </section>
+    <% if(theme.bigimg.enable){ %>
+    <section id="bigimg">
+        <%- partial('partial/bigimg') %>
+    </section>
+    <% } %>
     <section id="main">
         <div class="container">
             <div class="row">

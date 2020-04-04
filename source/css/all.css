@@ -4829,14 +4829,18 @@ html {
 section#navv {
     z-index: 999;
     width: 100%;
-    height: 5pc!important;
     height: 51px;
     background-color: #fff
 }
 
+/*section#bigimg {
+    height: 100%;
+}*/
+
 section#main {
     min-height: 70%;
-    background-color: #fff
+    background-color: #fff;
+    padding-top: 50px;
 }
 
 .post-list {
@@ -4864,7 +4868,6 @@ pre {
 }
 
 #footer {
-    margin-top: 1em;
     padding: .8em 0 3.6em;
     color: #6e7173;
     text-align: center;
@@ -4969,7 +4972,7 @@ ul {
 
 .panel-post {
     border-color: #fff;
-    box-shadow: 0 0 5px #000;
+    /*box-shadow: 0 0 5px #000;*/
     transition-duration: .1s
 }
 
