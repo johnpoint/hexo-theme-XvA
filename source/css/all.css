@@ -4976,9 +4976,9 @@ ul {
     transition-duration: .1s
 }
 
-.panel-post:hover {
+/*.panel-post:hover {
     box-shadow: 0 0 9pt #000
-}
+}*/
 
 .frpanel:hover {
     box-shadow: 0 0 9pt 0 #000
