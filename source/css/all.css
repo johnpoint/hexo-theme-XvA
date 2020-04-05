@@ -5070,11 +5070,10 @@ pre {
 }
 
 .page-navigator {
-	margin-top: 25px;
-	padding: 25px 0 0;
-	list-style: none;
-	text-align: center;
-	font-size: 14px
+	padding-bottom: 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
 }
 
 .page-navigator .page-number {
