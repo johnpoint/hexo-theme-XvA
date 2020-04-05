@@ -87,5 +87,3 @@ tagscloud:
 AdSense:
   enable: false
   google_ad_client: 
-
-version: 3.3.0
