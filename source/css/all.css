@@ -5430,7 +5430,7 @@ body.night .navbar-default .navbar-nav>li>a:hover {
 }
 
 body.night .navbar-default .navbar-nav>.active>a {
-	color: #353535
+	color: #353535 !important
 }
 
 body.night .navbar-default .navbar-nav>.active>a:hover {
