@@ -3,7 +3,7 @@
         <script src="/js/bootstrap.min.js"></script>
         <% if(theme.fancybox){ %>
         <script src="/js/jquery.fancybox.min.js"></script>
-        <script src="/js/fancybox.js"></script>
+        <script src="/js/fancybox.min.js"></script>
         <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
         <% } %>
         <% if(theme.analytics.google.enable){ %><%- partial('gtag') %><% } %>
@@ -12,13 +12,13 @@
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         <% } %>
         <% if(theme.totop){ %>
-        <script src="/js/totop.js"></script>
+        <script src="/js/totop.min.js"></script>
         <% } %>
-        <script src="/js/night.js"></script>
+        <script src="/js/night.min.js"></script>
         <div id="footer">Copyright © <%- theme.sitesince %> - <%- date(Date.now(), 'YYYY') %> <a href="/."
                         rel="nofollow"><%- config.title %>.</a><br>Powered by<a rel="nofollow" target="_blank"
                         href="https://hexo.io">
-                        Hexo </a> & <a rel="nofollow" target="_blank" href="https://github.com/johnpoint/hexo-theme-XvA">XvA v3.3.5</a>.
+                        Hexo </a> & <a rel="nofollow" target="_blank" href="https://github.com/johnpoint/hexo-theme-XvA">XvA v3.3.7</a>.
                 <% if(theme.analytics.busuanzi.enable){ %>
                 <br><span id="busuanzi_container_site_pv" style='display:none'>
                         <%= theme.analytics.busuanzi.text.head %> <span id="busuanzi_value_site_pv"></span>
