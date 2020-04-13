@@ -1,0 +1,174 @@
+menu:
+  Home: /
+  Archives: /archives
+  B & M: /movie
+  About: /about
+  Friends: /friends
+
+post_copyright:
+  enable: true
+  author: johnpoint
+  copyright_text: 本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
+
+loading: true
+totop: true
+fancybox: true
+sitesince: 2017
+yiyan: false
+
+bigimg: #首页巨幕图片
+  enable: false
+  imgurl:
+  text:
+
+widget:
+  tag:
+    enable: true
+    count: 30
+  friends:
+    enable: true
+
+friends:
+  pagetitle: 小伙伴们
+  list:
+    - title: 极光星空
+      url: https://www.ilemonrain.com/
+      img: https://cdn.lvcshu.info/img/friends/ilemonrain.png
+      desc: 探索星空，一路前行
+      sidebar: true
+      page: true
+    - title: Ovear's Blog
+      url: https://ovear.info/
+      img: https://cdn.lvcshu.info/img/friends/ovear.jpg
+      desc: =。=
+      sidebar: true
+      page: true
+    - title: 南琴浪的博客
+      url: https://sometimesnaive.org/
+      img: https://cdn.lvcshu.info/img/friends/any.jpg
+      desc: 
+      sidebar: true
+      page: true
+    - title: XZYMOE'S BLOG
+      url: https://www.xzymoe.com/
+      img: https://cdn.lvcshu.info/img/friends/xzymoe.jpg
+      desc: 关注互联网, 记录MOE的互联网生活.
+      sidebar: true
+      page: true
+    - title: 奶冰の冷藏室
+      url: https://milkice.me
+      img: https://cdn.lvcshu.info/img/friends/milkice.jpg
+      desc: Maybe a way to explore the world?
+      sidebar: true
+      page: true
+    - title: 萌爪实验室
+      url: https://www.mengclaw.com/
+      img: https://cdn.lvcshu.info/img/friends/wolfskylake.jpg
+      desc: 一只雪狗狗的杂货铺
+      sidebar: true
+      page: true
+    - title: Mr.KevinH
+      url: https://www.mrkevin.net/
+      img: https://cdn.lvcshu.info/img/friends/kevin.jpg
+      desc: 咨询、技术、分享
+      sidebar: false
+      page: true
+    - title: 双草酸酯的博客
+      url: https://0x.mk/
+      img: https://cdn.lvcshu.info/img/friends/0xmk.png
+      desc: 
+      sidebar: true
+      page: true
+    - title: Vigorous Pro
+      url: https://www.wevg.org
+      img: https://cdn.lvcshu.info/img/friends/Vigorous.png
+      desc: The world can always use more heroes.
+      sidebar: true
+      page: true
+    - title: Elepover's Blog
+      url: https://daily.elepover.com/
+      img: https://cdn.lvcshu.info/img/friends/elepover.svg
+      desc: Make undeniable rules to your own world.
+      sidebar: true
+      page: true
+    - title: 派兹的小站
+      url: https://blog.blw.moe
+      img: https://cdn.lvcshu.info/img/friends/blingwang.png
+      desc: 莓办法 银不了 尽梨了
+      sidebar: true
+      page: true
+    - title: Justf's Channel
+      url: https://channel.Justf.space
+      img: https://cdn.lvcshu.info/img/friends/Justf.png
+      desc: 幸福如人饮水，冷暖自知。
+      sidebar: true
+      page: true
+    - title: Cyberspace of Swung
+      url: https://www.swung0x48.com
+      img: https://cdn.lvcshu.info/img/friends/Swung0x48.jpg
+      desc: Lost in cyberpunk.
+      sidebar: true
+      page: true
+    - title: FlyingSky's Blog
+      url: https://blog.fsky7.com
+      img: https://cdn.lvcshu.info/img/friends/FlyingSky.jpg
+      desc: 每个人的裂痕，最后都会变成故事的花纹。
+      sidebar: true
+      page: true
+    - title: 1A23 Studio
+      url: https://1a23.com
+      img: https://cdn.lvcshu.info/img/friends/logo4square.svg
+      desc: We create.
+      sidebar: true
+      page: true
+    - title: 翰林的小站
+      url: https://ihcr.top
+      img: https://cdn.lvcshu.info/img/friends/ihcr.png
+      desc: 博览乐学，敢于探索。
+      sidebar: true
+      page: true
+
+comment:
+  disqus:
+    enable: true
+    shortname: johnpoints-blog-hexo
+    lazyload: true
+  gitalk:
+    enable: false
+    owner:
+    repo:
+    oauth:
+      client_id:
+      client_secret:
+
+analytics:
+  google:
+    enable: true
+    id: UA-122182397-1
+  LA:
+    enable: false
+    id: 20184423
+  busuanzi: # 不蒜子网站统计
+    enable: false
+    text:
+      head: 你是本站第 # 描述 示例:本站访客数 Example: view
+      end: 位小伙伴~ # 描述 单位 示例:人次 Example: times
+      # 效果: 本站访客数 233 人次
+      # effect: view 233 times
+
+tagscloud:
+  color:
+    enable: false
+    start: # Start color. You can use hex (#b700ff), rgba (rgba(183, 0, 255, 1)), hsla (hsla(283, 100%, 50%, 1)) or color keywords. This option only works when color is true.
+    end: # End color. You can use hex (#b700ff), rgba (rgba(183, 0, 255, 1)), hsla (hsla(283, 100%, 50%, 1)) or color keywords. This option only works when color is true.
+  text:
+    min: 20 # 最小字体大小 Minimal font size
+    max: 40 # 最大字体大小 Maximum font size
+    unit: px # 字体尺寸单位 Unit of font size
+
+
+AdSense:
+  enable: false
+  google_ad_client: 
+
+version: 3.3.0
