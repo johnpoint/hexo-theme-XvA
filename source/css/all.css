@@ -5040,6 +5040,7 @@ td.gutter {
 }
 
 nav.navbar.navbar-default {
+	top: 0px;
 	position: fixed;
 	z-index: 999;
 	width: 100%;

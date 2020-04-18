@@ -1,0 +1,55 @@
+<script>
+    $('.navbar-default').addClass("nav-bg");
+    $(window).scroll(function (event) {
+        console.log($(window).scrollTop())
+        if ($(window).scrollTop() >= document.body.clientHeight - 100) {
+            $('.navbar-default').removeClass("nav-bg");
+        }
+        if ($(window).scrollTop() <= document.body.clientHeight - 100) {
+            $('.navbar-default').addClass("nav-bg");
+        }
+    });
+</script>
+<div id="bg-shaw"></div>
+<h1 id="bg-title"><%= config.title -%></h1>
+<style>
+    #bg-shaw {
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    #bg-title {
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        color: white;
+    }
+
+    section#bigimg {
+        top: 0px;
+        height: 100%;
+        background: url('/img/bg.webp');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .nav-bg {
+        border: none !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    .nav-bg .navbar-collapse>ul>li>a {
+        color: white !important;
+    }
+
+    .nav-bg .navbar-collapse>ul>li:hover {
+        color: white !important;
+        border-bottom: inset;
+    }
+
+    .nav-bg .navbar-brand {
+        color: white;
+    }
+</style>
