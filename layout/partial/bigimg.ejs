@@ -21,13 +21,13 @@
 </div>
 <h1 id="bg-title"><%= config.title -%></h1>
 <center id="bg-text">
-    <% if(theme.bigimg.RSS!=null){ %>
+    <% if(theme.bigimg.RSS!=''){ %>
     <a href="<%= theme.bigimg.RSS -%>" class="iconfont icon-rss"></a>
     <% } %>
-    <% if(theme.bigimg.Github!=null){ %>
+    <% if(theme.bigimg.Github!=''){ %>
     <a href="<%= theme.bigimg.Github -%>" class="iconfont icon-git"></a>
     <% } %>
-    <% if(theme.bigimg.Telegram!=null){ %>
+    <% if(theme.bigimg.Telegram!=''){ %>
     <a href="<%= theme.bigimg.Telegram -%>" class="iconfont icon-telegram"></a>
     <% } %>
 </center>
@@ -73,7 +73,11 @@
     section#bigimg {
         top: 0px;
         height: 100%;
-        background: url('/img/bg.webp');
+        <% if(theme.bigimg.background == ''){ %>
+            background: url('/img/bg.jpeg');
+        <% } else { %>
+            background: url('<%= theme.bigimg.background -%>');
+        <% } %>
         background-size: cover;
         background-attachment: fixed;
     }

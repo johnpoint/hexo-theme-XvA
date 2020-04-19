@@ -16,6 +16,7 @@ yiyan: false #一言 https://www.jinrishici.com
 
 bigimg: #首页巨幕图片
   enable: false
+  background: 
   RSS: # URL
   Github: https://github.com/ #URL
   Telegram: https://t.me/ #URL
