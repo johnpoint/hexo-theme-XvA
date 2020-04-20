@@ -362,15 +362,19 @@ hr {
 }
 
 .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
-	font-size: 75%
+	font-size: 70%
+}
+
+h1.posttitle{
+	font-size: 36px;
 }
 
 .h1, h1 {
-	font-size: 36px
+	font-size: 32px
 }
 
 .h2, h2 {
-	font-size: 30px
+	font-size: 28px
 }
 
 .h3, h3 {
@@ -378,19 +382,19 @@ hr {
 }
 
 .h4, h4 {
-	font-size: 18px
+	font-size: 20px
 }
 
 .h5, h5 {
-	font-size: 14px
+	font-size: 18px
 }
 
 .h6, h6 {
-	font-size: 9pt
+	font-size: 14pt
 }
 
 .small, small {
-	font-size: 85%
+	font-size: 70%
 }
 
 .mark, mark {
