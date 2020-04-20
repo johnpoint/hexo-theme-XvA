@@ -30,6 +30,9 @@
     <% if(theme.bigimg.Telegram!=''){ %>
     <a href="<%= theme.bigimg.Telegram -%>" class="iconfont icon-telegram"></a>
     <% } %>
+    <% if(theme.bigimg.Mail!=''){ %>
+    <a href="<%= theme.bigimg.Mail -%>" class="iconfont icon-mail"></a>
+    <% } %>
 </center>
 <style>
     #bg-shaw {
@@ -73,12 +76,18 @@
     section#bigimg {
         top: 0px;
         height: 100%;
-        <% if(theme.bigimg.background == ''){ %>
-            background: url('/img/bg.jpeg');
-        <% } else { %>
-            background: url('<%= theme.bigimg.background -%>');
-        <% } %>
-        background-size: cover;
+
+        <% if(theme.bigimg.background=='') {
+            %>background: url('/img/bg.jpeg');
+            <%
+        }
+
+        else {
+            %>background: url('<%= theme.bigimg.background -%>');
+            <%
+        }
+
+        %>background-size: cover;
         background-attachment: fixed;
     }
 
