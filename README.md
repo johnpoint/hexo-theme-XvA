@@ -24,11 +24,13 @@ cp _config.example.yml _config.yml
 
 # Version 版本号
 
-大版本 . 新功能 . 小修改
+A . B . C
 
-当 `小修改` 序号上升时无需进行配置文件的更新只需更新代码，其他数字更新时需要检查配置文件的更新 
+当 C 变化时配置文件无需修改，其余两位数字变化时有可能需要对配置文件进行修改
 
 # Configuration 配置
+
+## Theme configuration 主题全局配置
 
 ```yml
 # 导航栏
@@ -46,6 +48,14 @@ totop: true
 fancybox: true
 sitesince: #页脚版权信息，年份 Footer copyright information, filled in the year
 yiyan: false #一言 https://www.jinrishici.com
+
+bigimg: #首页巨幕图片
+  enable: false
+  background: 
+  RSS: # URL
+  Github: https://github.com/ #URL
+  Telegram: https://t.me/ #URL
+  Mail: #mail
 
 # 侧边栏
 # sidebar
@@ -111,6 +121,27 @@ tagscloud:
     min: 20 # 最小字体大小 Minimal font size
     max: 40 # 最大字体大小 Maximum font size
     unit: px # 字体尺寸单位 Unit of font size
+
+AdSense:
+  enable: false
+  google_ad_client: 
+```
+
+## 页面配置
+
+```yaml
+copyright: false #默认显示版权信息，设置为 false 可以隐藏
+toc: true #显示目录
+sidebar: true #独立页面默认不显示侧边栏，设置为 true 可以显示
+bigimg: #直接填入背景参数，详情看示例
+#示例
+bigimg: url('//cdn.lvcshu.info/img/20200426001.jpg')
+# or
+bigimg: cadetblue
+# or
+bigimg: #6f5fa0 
+# or
+bigimg: rgb(111, 95, 160)
 ```
 
 # Demo 演示
@@ -121,31 +152,6 @@ tagscloud:
 # Font 字体
 
 参见 [配置CORS小记](https://blog.lvcshu.com/2019/10/07/配置CORS小记/)
-
-# TODO 待实现
-
-- [x] 侧边栏友情链接
-- [x] disqus
-- [x] google analytics
-- [x] 51LA
-- [x] 文章版权声明
-- [x] highlight.js 代码高亮
-- [x] 独立友链页面
-- [x] 独立标签云
-- [x] 添加不蒜子访客统计
-- [x] disqus lazyload
-- [x] 修复手机部分字体不兼容
-- [x] 图片窗口内打开
-- [x] 回到顶部
-- [x] 加载进度条
-- [x] 夜间模式
-- [x] 代码高亮优化
-- [x] ~~Gitment~~ Gitalk 支持
-- [x] 一言 支持
-- [ ] 添加动画效果
-- [ ] 不蒜子阅读量统计
-- [x] 多语言支持
-- [x] 侧边目录优化
 
 # Thanks 致谢
 
@@ -158,9 +164,8 @@ tagscloud:
 - [iconfont](https://www.iconfont.cn/)
 
 - 字体
-  - [方正兰亭纤黑](http://www.foundertype.com/index.php/FontInfo/index/id/216.html) (不包含在项目中，须自行获取授权)
-  - [方正粗金陵](http://www.foundertype.com/index.php/FontInfo/index/id/202) (不包含在项目中，须自行获取授权)
   - Times New Roman
+  - Titillium Web
   - Times
   - serif
 
