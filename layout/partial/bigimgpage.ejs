@@ -1,0 +1,27 @@
+<style>
+    section#bigimg {
+        height: 350px;
+        background: <%- page.bigimg %>;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (min-width: 1200px) {
+        .col-md-9 {
+            top: -215px;
+            position: relative;
+            background: white;
+        }
+
+        .night .col-md-9 {
+            background: #000000;
+        }
+    }
+
+    .night .shaw {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.32);
+    }
+</style>
+<div class="shaw"></div>

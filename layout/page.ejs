@@ -5,6 +5,11 @@
     <div id="navv">
         <%- partial('partial/header') %>
     </div>
+    <% if(page.bigimg){ %>
+    <section id="bigimg">
+        <%- partial('partial/bigimgpage') %>
+    </section>
+    <% } %>
     <section id="main">
         <div class="container">
             <% if(page.sidebar){ %>
