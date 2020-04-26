@@ -1,5 +1,14 @@
 <script>
     $('.navbar-default').addClass("nav-bg");
+    $(window).scroll(function (event) {
+        h = $(window).scrollTop()
+        if (h >= document.body.clientHeight - 30) {
+            $('.navbar-default').removeClass("nav-bg");
+        }
+        if (h <= document.body.clientHeight - 30) {
+            $('.navbar-default').addClass("nav-bg");
+        }
+    });
     function goindex() {
         window.scrollTo({
             top: document.body.clientHeight - 10,

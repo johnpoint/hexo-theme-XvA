@@ -37,9 +37,4 @@ window.onscroll = function(e) {
         $(".totop")[0].style.display = "";
         topstatus = 1
     }
-    if(!judgeIfTop()){
-        $('.navbar-default').removeClass("nav-bg");
-    }else{
-        $('.navbar-default').addClass("nav-bg");
-    }
 };
