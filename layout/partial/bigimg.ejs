@@ -1,10 +1,11 @@
 <script>
     $('.navbar-default').addClass("nav-bg");
     $(window).scroll(function (event) {
-        if ($(window).scrollTop() >= document.body.clientHeight - 30) {
+        h = $(window).scrollTop()
+        if (h >= document.body.clientHeight - 30) {
             $('.navbar-default').removeClass("nav-bg");
         }
-        if ($(window).scrollTop() <= document.body.clientHeight - 30) {
+        if (h <= document.body.clientHeight - 30) {
             $('.navbar-default').addClass("nav-bg");
         }
     });
