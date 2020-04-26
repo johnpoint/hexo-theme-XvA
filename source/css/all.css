@@ -365,7 +365,7 @@ hr {
 	font-size: 70%
 }
 
-h1.posttitle{
+h1.posttitle {
 	font-size: 36px;
 }
 
@@ -5341,6 +5341,7 @@ body.night .fas {
 }
 
 .posttitle {
+	padding-top: 1px;
 	font-family: Times New Roman, Times, FZJL, serif!important
 }
 
