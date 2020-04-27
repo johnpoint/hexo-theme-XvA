@@ -5382,6 +5382,10 @@ a.post-toc-link {
 	color: rgba(0, 0, 0, .4)!important
 }
 
+.night .postinfo {
+	background: #000;
+}
+
 .postinfo {
 	box-shadow: 0 0 5px 0 #000
 }
