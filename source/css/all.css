@@ -365,8 +365,8 @@ hr {
 	font-size: 70%
 }
 
-h1.posttitle {
-	font-size: 36px;
+h1.posttitle, .posttitle h1 {
+	font-size: 40px;
 }
 
 .h1, h1 {
