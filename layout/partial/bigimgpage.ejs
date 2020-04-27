@@ -1,8 +1,42 @@
 <style>
-    section#bigimg {
+    div#bigimg {
         height: 350px;
-        background: <%- page.bigimg %>;
-        background-repeat: no-repeat;
+
+        <% if(page.bigimg) {
+            %>background: <%- page.bigimg %>;
+            <%
+        }
+
+        else {
+            num=parseInt(Math.floor(Math.random()*10)/2) %><% if(num==0) {
+                %>background: url('/img/0.jpg');
+                <%
+            }
+
+            %><% if(num==1) {
+                %>background: url('/img/1.jpg');
+                <%
+            }
+
+            %><% if(num==2) {
+                %>background: url('/img/2.jpg');
+                <%
+            }
+
+            %><% if(num==3) {
+                %>background: url('/img/3.jpg');
+                <%
+            }
+
+            %><% if(num==4) {
+                %>background: url('/img/4.jpg');
+                <%
+            }
+
+            %><%
+        }
+
+        %>background-repeat: no-repeat;
         background-size: cover;
     }
 
@@ -39,12 +73,16 @@
     }
 
     @media (min-width: 768px) {
-        section#bigimg {
+        div#bigimg {
             height: 350px !important;
         }
     }
 
-    section#bigimg {
+    .post-sidebar {
+        top: 0px !important;
+    }
+
+    div#bigimg {
         height: 240px;
     }
 
@@ -52,9 +90,12 @@
         top: 200px;
     }
 
-    .container {
+    div#main {
+        min-height: 70%;
+        background: rgba(0, 0, 0, 0) !important;
+        padding-top: 50px;
         position: relative;
-        top: -240px;
+        top: -260px;
     }
 
     .night .shaw {

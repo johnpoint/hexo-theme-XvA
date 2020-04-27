@@ -4823,11 +4823,8 @@ body {
 }
 
 body, html {
-	height: 100%
-}
-
-html {
-	background-color: #dfdfdf
+	background: white;
+	height: 100%;
 }
 
 section#navv {
@@ -4837,7 +4834,11 @@ section#navv {
 	background-color: #fff
 }
 
-section#main {
+div#footer {
+	background: #f7f7f7;
+}
+
+div#main {
 	min-height: 70%;
 	background-color: #fff;
 	padding-top: 50px
@@ -5301,7 +5302,7 @@ body.night section#navv {
 	background-color: #000
 }
 
-body.night section#main {
+body.night div#main {
 	min-height: 70%;
 	background-color: #000
 }

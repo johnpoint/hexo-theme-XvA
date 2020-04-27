@@ -1,5 +1,5 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
-<p align="center"><img src="https://img.shields.io/badge/Version-3.6.12-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-3.6.13-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
 
 一个简~~约~~单的 HEXO 主题
 
@@ -169,6 +169,13 @@ bigimg: rgb(111, 95, 160)
   - Titillium Web
   - Times
   - serif
+
+- 图片
+  - Photo by Teo Duldulao on [Unsplash](https://unsplash.com/photos/4op9_2Bt2Eg)
+  - Photo by Ash Edmonds on [Unsplash](https://unsplash.com/photos/gcINRBbUxl0)
+  - Photo by Ash Edmonds on [Unsplash](https://unsplash.com/photos/azkczZ4rOgk)
+  - Photo by Jon Tyson on [Unsplash](https://unsplash.com/photos/vksdfuY2d6M)
+  - Photo by Roman Serdyuk on [Unsplash](https://unsplash.com/photos/DL9Wz4YDa2s)
 
 # LICENSE 许可协议
 
