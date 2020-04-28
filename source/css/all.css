@@ -5390,6 +5390,28 @@ a.post-toc-link {
 	box-shadow: 0 0 5px 0 #000
 }
 
+.post-nav>div>a>i {
+	padding: 10px;
+}
+
+.post-nav>div>a {
+	color: #000;
+	font-size: 18px;
+}
+
+.night .post-nav>div>a {
+	color: hsla(0, 0%, 100%, .8);
+}
+
+.post-nav>div>a:hover {
+	color: rgb(41, 141, 255);
+	text-decoration: none !important;
+}
+
+.post-nav-next {
+	text-align: right;
+}
+
 .post-content {
 	padding: 15px
 }

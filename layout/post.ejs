@@ -32,6 +32,19 @@
                     </article>
                     <% if(theme.comment.disqus.enable==true && page.comment!=false){ %>
                     <hr>
+                    <div class="post-nav">
+                        <% if(page.prev){ %>
+                        <div class="post-nav-prev">
+                            <a href="<%- url_for(page.prev.path) %>"><i class="iconfont icon-prev"></i><%= page.prev.title %></a>
+                        </div>
+                        <% } %>
+                        <% if(page.next){ %>
+                        <div class="post-nav-next">
+                            <a href="<%- url_for(page.next.path) %>"><%= page.next.title %><i class="iconfont icon-next"></i></a>
+                        </div>
+                        <% } %>
+                    </div>
+                    <br>
                     <%- partial('partial/disqus') %>
                     <% } %>
                     <% if(theme.comment.gitalk.enable==true && page.comment!=false){ %>
