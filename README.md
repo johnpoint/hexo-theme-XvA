@@ -1,5 +1,5 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
-<p align="center"><img src="https://img.shields.io/badge/Version-3.6.16-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
+<p align="center"><img src="https://img.shields.io/badge/Version-3.6.17-green"> <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA"> <img src="https://img.shields.io/badge/hexo-3.7%2B-green"> <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master"> <a href="https://codebeat.co/projects/github-com-johnpoint-hexo-theme-xva-master"><img alt="codebeat badge" src="https://codebeat.co/badges/4ff53f5f-f14a-4c02-b359-f70508088cef" /></a></p>
 
 一个简~~约~~单的 HEXO 主题
 
@@ -129,6 +129,15 @@ AdSense:
 ```
 
 ## 页面配置
+
+**本主题自带代码高亮，请关闭 hexo 自带高亮功能!**
+```yaml
+highlight:
+  enable: false
+  auto_detect: false
+  line_number: false
+  tab_replace: false
+```
 
 ```yaml
 copyright: false #默认显示版权信息，设置为 false 可以隐藏

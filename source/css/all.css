@@ -650,7 +650,6 @@ pre code {
 	border-radius: 0;
 	background-color: transparent;
 	color: inherit;
-	white-space: pre-wrap;
 	font-size: inherit
 }
 
@@ -5303,7 +5302,6 @@ body.night section#navv {
 }
 
 body.night div#main {
-	min-height: 70%;
 	background-color: #000
 }
 
