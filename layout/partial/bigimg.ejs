@@ -1,12 +1,20 @@
 <script>
+    let pagestatus = 0;
     $('.navbar-default').addClass("nav-bg");
+    if (window.location.href.indexOf("page") != -1) {
+        $('#bigimg').hide();
+        $('.navbar-default').removeClass("nav-bg");
+        pagestatus = 1;
+    }
     $(window).scroll(function (event) {
         h = $(window).scrollTop()
-        if (h >= document.body.clientHeight - 30) {
-            $('.navbar-default').removeClass("nav-bg");
-        }
-        if (h <= document.body.clientHeight - 30) {
-            $('.navbar-default').addClass("nav-bg");
+        if (pagestatus == 0) {
+            if (h >= document.body.clientHeight - 30) {
+                $('.navbar-default').removeClass("nav-bg");
+            }
+            if (h <= document.body.clientHeight - 30) {
+                $('.navbar-default').addClass("nav-bg");
+            }
         }
     });
     function goindex() {
@@ -21,7 +29,7 @@
     <i onclick="goindex()" class="iconfont icon-down"></i>
 </div>
 <h1 id="bg-title"><%= config.title -%></h1>
-<center id="bg-text">
+<div id="bg-text">
     <% if(theme.bigimg.RSS!=''){ %>
     <a href="<%= theme.bigimg.RSS -%>" class="iconfont icon-rss"></a>
     <% } %>
@@ -37,12 +45,16 @@
     <% if(theme.bigimg.wikipedia!=''){ %>
     <a href="<%= theme.bigimg.wikipedia -%>" class="iconfont icon-wikipedia"></a>
     <% } %>
-</center>
+</div>
 <style>
     #bg-shaw {
         height: 100%;
         width: 100%;
         background: rgba(0, 0, 0, 0.2);
+    }
+
+    div#bg-text {
+        text-align: center;
     }
 
     i.iconfont.icon-down {
