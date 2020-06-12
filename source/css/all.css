@@ -1242,13 +1242,19 @@ table {
 	max-width: 100%
 }
 
+thead {
+	border-top: 2px solid #ddd;
+}
+
 table>tbody>tr>td, table>tbody>tr>th, table>tfoot>tr>td, table>tfoot>tr>th, table>thead>tr>td, table>thead>tr>th {
 	padding-top: 6px;
 	padding-left: 10px;
 	border-top: 1px solid #ddd;
 	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
 	vertical-align: top;
-	line-height: 1.42857143
+	line-height: 1.42857143;
 }
 
 figure>table>tbody>tr>td {
