@@ -22,7 +22,7 @@
                 <% if(ayear!=byear){ ayear=byear %>
                 <h2><%- byear %></h2>
                 <% } %>
-                <div class="archives-post-content">
+                <div class="archives-post-content" onclick="window.location.pathname='<%- url_for(post.path) %>'">
                     <span class="post-date"><%= date(post.date, "MM-DD") %></span>
                     <a class="post-title posttitle" href="<%- url_for(post.path) %>"><%= post.title %></a></div>
                 <% }) %>

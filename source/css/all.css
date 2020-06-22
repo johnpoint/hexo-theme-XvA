@@ -5022,13 +5022,7 @@ ol.post-toc, ol.post-toc-child {
 
 a.post-title {
 	font-size: 18px;
-	transition-duration: .1s
-}
-
-a.post-title:hover {
-	color: rgba(255, 62, 62, .705)!important;
 	text-decoration: none;
-	font-size: 19px
 }
 
 .post-date {
@@ -5418,4 +5412,16 @@ a.post-toc-link {
 
 .post-content {
 	padding: 15px
+}
+
+.archives-post-content {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	transition-duration: .4s
+}
+
+.archives-post-content:hover {
+	background-color: rgba(0, 0, 0, 0.08);
+	border-left: 2px solid rgba(0, 0, 0, 0.1);
 }
