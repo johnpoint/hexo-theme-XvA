@@ -1,6 +1,6 @@
 # <div align="center"><img src="https://raw.githubusercontent.com/johnpoint/hexo-theme-XvA/master/logo.png"></img></div>
 <p align="center">
-<img src="https://img.shields.io/badge/Version-3.7.0-green">
+<img src="https://img.shields.io/badge/Version-3.7.1-green">
 <img src="https://img.shields.io/github/license/johnpoint/hexo-theme-XvA">
 <a href="https://hexo.io" target="_blank"><img alt="Hexo" src="https://img.shields.io/badge/hexo-4.0%2B-green"/></a>
 <img src="https://travis-ci.org/johnpoint/hexo-theme-XvA.svg?branch=master">
