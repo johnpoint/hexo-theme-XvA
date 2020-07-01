@@ -96,7 +96,7 @@ pre {
 	overflow: auto;
 	border-radius: 0!important;
 	color: #fff!important;
-	background: #000!important
+	background: #000;
 }
 
 code, kbd, pre, samp {
@@ -637,7 +637,7 @@ pre {
 	margin: 0 0 10px;
 	padding: 9.5px;
 	border-radius: 4px;
-	background-color: #f5f5f5;
+	/*background-color: #f5f5f5;*/
 	color: #333;
 	word-wrap: break-word;
 	font-size: 13px;
@@ -4915,6 +4915,10 @@ body.night .navbar-default .navbar-nav>li>a {
 	color: #ffffffa1!important
 }
 
+body.night .post-content>h1 {
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
 .page-navigator a:hover, .page-navigator span:hover {
 	background: #f8f8f8;
 	border-bottom-color: #d26911
@@ -5214,7 +5218,7 @@ body.night .post, body.night pre {
 }
 
 body.night pre {
-	background-color: rgba(0, 0, 0, .4)
+	background-color: rgba(255, 255, 255, 0.4)
 }
 
 .page-navigator a.prev, .page-navigator span.next, body.night .page-navigator .page-number, body.night .page-navigator a.next {
@@ -5424,4 +5428,30 @@ a.post-toc-link {
 .archives-post-content:hover {
 	background-color: rgba(0, 0, 0, 0.08);
 	border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar Author:SukkaW */
+/* From:https://github.com/SukkaW/hexo-theme-suka/blob/6af736cbd75174baf9519017ce3e7bb9bb8d70d8/src/css/style.css */
+
+html *::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
+	background: transparent;
+}
+
+@media (min-width: 1024px) {
+	html *::-webkit-scrollbar {
+		width: 8px;
+		height: 6px;
+	}
+}
+
+/* Scrollbar CSS end */
+
+html *::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, .3);
+}
+
+.night *::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.3);
 }
