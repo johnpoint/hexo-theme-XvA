@@ -5367,7 +5367,7 @@ img {
 }
 
 ol.post-toc {
-	max-height: 80%;
+	max-height: 50%;
 	position: fixed;
 	overflow-y: auto
 }
