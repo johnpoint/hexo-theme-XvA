@@ -28,7 +28,9 @@ if (judgeIfTop()) {
     $(".totop")[0].style.display = "";
     var topstatus = 1
 }
-window.onscroll = function(e) {
+
+
+var scroll = function() {
     if (judgeIfTop() && topstatus == 1) {
         $(".totop")[0].style.display = "none";
         topstatus = 0
@@ -38,3 +40,17 @@ window.onscroll = function(e) {
         topstatus = 1
     }
 };
+
+var waiting = false;
+$(window).scroll(function() {
+    if (waiting) {
+        return;
+    }
+    waiting = true;
+
+    scroll();
+
+    setTimeout(function() {
+        waiting = false;
+    }, 100);
+});
