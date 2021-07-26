@@ -6,7 +6,7 @@
         $('.navbar-default').removeClass("nav-bg");
         pagestatus = 1;
     }
-    $(window).scroll(function (event) {
+    $(window).scroll(function(event) {
         h = $(window).scrollTop()
         if (pagestatus == 0) {
             if (h >= document.body.clientHeight - 30) {
@@ -17,6 +17,7 @@
             }
         }
     });
+
     function goindex() {
         window.scrollTo({
             top: document.body.clientHeight - 10,
@@ -28,23 +29,25 @@
 <div id="bg-shaw">
     <i onclick="goindex()" class="iconfont icon-down"></i>
 </div>
-<h1 id="bg-title"><%= config.title -%></h1>
+<h1 id="bg-title">
+    <%= config.title -%>
+</h1>
 <div id="bg-text">
     <% if(theme.bigimg.RSS!=''){ %>
-    <a href="<%= theme.bigimg.RSS -%>" class="iconfont icon-rss"></a>
-    <% } %>
-    <% if(theme.bigimg.Github!=''){ %>
-    <a href="<%= theme.bigimg.Github -%>" class="iconfont icon-git"></a>
-    <% } %>
-    <% if(theme.bigimg.Telegram!=''){ %>
-    <a href="<%= theme.bigimg.Telegram -%>" class="iconfont icon-telegram"></a>
-    <% } %>
-    <% if(theme.bigimg.Mail!=''){ %>
-    <a href="mailto:<%= theme.bigimg.Mail -%>" class="iconfont icon-mail"></a>
-    <% } %>
-    <% if(theme.bigimg.wikipedia!=''){ %>
-    <a href="<%= theme.bigimg.wikipedia -%>" class="iconfont icon-wikipedia"></a>
-    <% } %>
+        <a href="<%= theme.bigimg.RSS -%>" class="iconfont icon-rss"></a>
+        <% } %>
+            <% if(theme.bigimg.Github!=''){ %>
+                <a href="<%= theme.bigimg.Github -%>" class="iconfont icon-git"></a>
+                <% } %>
+                    <% if(theme.bigimg.Telegram!=''){ %>
+                        <a href="<%= theme.bigimg.Telegram -%>" class="iconfont icon-telegram"></a>
+                        <% } %>
+                            <% if(theme.bigimg.Mail!=''){ %>
+                                <a href="mailto:<%= theme.bigimg.Mail -%>" class="iconfont icon-mail"></a>
+                                <% } %>
+                                    <% if(theme.bigimg.wikipedia!=''){ %>
+                                        <a href="<%= theme.bigimg.wikipedia -%>" class="iconfont icon-wikipedia"></a>
+                                        <% } %>
 </div>
 <style>
     #bg-shaw {
@@ -52,11 +55,11 @@
         width: 100%;
         background: rgba(0, 0, 0, 0.2);
     }
-
+    
     div#bg-text {
         text-align: center;
     }
-
+    
     i.iconfont.icon-down {
         font-size: 2.5em;
         position: absolute;
@@ -64,17 +67,17 @@
         color: white;
         left: 10px;
     }
-
+    
     @media (min-width: 768px) {
         div#bigimg {
             height: 350px;
         }
     }
-
+    
     div#bigimg {
         height: 240px;
     }
-
+    
     #bg-title {
         top: 40%;
         width: 100%;
@@ -83,14 +86,14 @@
         color: white;
         font-family: 'Titillium Web', sans-serif;
     }
-
+    
     #bg-text {
         position: absolute;
         width: 100%;
         top: 50%;
         color: white;
     }
-
+    
     #bg-text>a {
         text-align: center;
         color: white;
@@ -98,39 +101,37 @@
         text-decoration: none;
         padding: 6px;
     }
-
-    div#bigimg {
+    
+    div#bigimg::before {
         top: 0px;
         height: 100%;
-
+        position: fixed;
         <% if(theme.bigimg.background=='') {
             %>background: url('/img/bg.jpeg');
             <%
         }
-
         else {
             %>background: url('<%= theme.bigimg.background -%>');
             <%
         }
-
         %>background-size: cover;
-        background-attachment: fixed;
+        will-change: transform;
     }
-
+    
     .nav-bg {
         border: none !important;
         background-color: rgba(0, 0, 0, 0) !important;
     }
-
+    
     .nav-bg .navbar-collapse>ul>li>a {
         color: white !important;
     }
-
+    
     .nav-bg .navbar-collapse>ul>li:hover {
         color: white !important;
         border-bottom: inset;
     }
-
+    
     .nav-bg .navbar-brand {
         color: white;
     }

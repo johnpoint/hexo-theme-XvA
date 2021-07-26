@@ -54,5 +54,5 @@ $(window).scroll(function() {
 
     setTimeout(function() {
         waiting = false;
-    }, 100);
+    }, 800);
 });
