@@ -105,22 +105,6 @@
     div#bigimg {
         top: 0px;
         height: 100%;
-        color: white;
-        <% if(theme.bigimg.background=='') {
-            %>background: url('/img/bg.jpeg');
-            <%
-        }
-        else {
-            %>background: url('<%= theme.bigimg.background -%>');
-            <%
-        }
-        overflow: hidden;
-    }
-    
-    div#bigimg::before {
-        top: 0px;
-        height: 100%;
-        position: fixed;
         <% if(theme.bigimg.background=='') {
             %>background: url('/img/bg.jpeg');
             <%
@@ -130,7 +114,7 @@
             <%
         }
         %>background-size: cover;
-        will-change: transform;
+        background-attachment: fixed;
     }
     
     .nav-bg {
