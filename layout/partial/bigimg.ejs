@@ -104,17 +104,30 @@
     
     div#bigimg {
         top: 0px;
-        height: 100%;
-        <% if(theme.bigimg.background=='') {
-            %>background: url('/img/bg.jpeg');
-            <%
+        min-height: 100%;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            <% if(theme.bigimg.background=='') {
+                %>background: url('/img/bg.jpeg');
+                <%
+            }
+            else {
+                %>background: url('<%= theme.bigimg.background -%>');
+                <%
+            }
+            %>background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            will-change: transform;
+            z-index: -1;
         }
-        else {
-            %>background: url('<%= theme.bigimg.background -%>');
-            <%
-        }
-        %>background-size: cover;
-        background-attachment: fixed;
     }
     
     .nav-bg {
