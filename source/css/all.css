@@ -6559,6 +6559,6 @@ html *::-webkit-scrollbar-thumb {
     width: 128px;
     height: 128px;
     top: -35px;
-    right: 740px;
+    right: 200px;
     opacity: 0.15;
 }
