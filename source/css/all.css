@@ -6563,8 +6563,8 @@ html *::-webkit-scrollbar-thumb {
     opacity: 0.15;
 }
 
-.post-copyright ul {
-    padding-left: 15px;
+ul.post-copyright {
+    padding-left: 15px !important;
 }
 
 .post-time {
