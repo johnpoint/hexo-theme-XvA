@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <%- partial('partial/head') %>
 
-<body>
-    <div id="navv">
-        <%- partial('partial/header') %>
-    </div>
-    <% if(theme.bigimg.enable){ %>
-    <div id="bigimg">
-        <%- partial('partial/bigimg') %>
-    </div>
-    <% } %>
-    <div id="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 post-list" style="padding-top: 30px;">
-                    <% if(theme.yiyan){ %>
-                    <div class="panel panel-default">
-                        <div class="panel-body posttitle" style="color:rgb(158, 158, 158)">
-                            <span id="jinrishici-sentence">正在加载今日诗词....</span>
-                            <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-                        </div>
-                    </div>
-                    <% } %>
-                    <% page.posts.each(function (post) { %>
-                    <div class="panel panel-default panel-post">
-                        <div class="panel-body">
-                            <h3 class="posttitle"><a href="<%- url_for(post.path) %>"><%= post.title %></a><small
-                                    class="post-time">
+    <body>
+        <div id="navv">
+            <%- partial('partial/header') %>
+        </div>
+        <% if(theme.bigimg.enable){ %>
+            <div id="bigimg">
+                <%- partial('partial/bigimg') %>
+            </div>
+            <% } %>
+                <div id="main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 post-list" style="padding-top: 30px;">
+                                <% if(theme.yiyan){ %>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body posttitle" style="color:rgb(158, 158, 158)">
+                                            <span id="jinrishici-sentence">正在加载今日诗词....</span>
+                                            <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                                        <% page.posts.each(function (post) { %>
+                                            <div class="panel panel-default panel-post">
+                                                <div class="panel-body">
+                                                    <h3 class="posttitle">
+                                                        <a href="<%- url_for(post.path) %>">
+                                                            <%= post.title %>
+                                                        </a><small class="post-time">
                                     <%- date(post.date, "YYYY-MM-DD") %></small></h3>
-                            <small><%- post.excerpt %></small><br>
-                            <div class="indexPostTag">
-                                <% post.tags.forEach(function(tag){ %>
-                                <a href="/<%= tag.path %>" style="font-size: 0.9em;"></style><i
-                                        class="iconfont icon-tag" aria-hidden="true"></i>&nbsp;<%- tag.name %></a>&nbsp;
-                                <% }) %>
+                                                    <div>
+                                                        <%- post.excerpt %>
+                                                    </div><br>
+                                                    <div class="indexPostTag">
+                                                        <% post.tags.forEach(function(tag){ %>
+                                                            <a href="/<%= tag.path %>" style="font-size: 0.9em;"></style><i class="iconfont icon-tag" aria-hidden="true"></i>&nbsp;
+                                                                <%- tag.name %>
+                                                            </a>&nbsp;
+                                                            <% }) %>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <% }) %>
+                                                <%- partial('partial/paginator') %>
+                                                    <br>
+                            </div>
+                            <div class="col-md-3" style="padding-top: 30px;">
+                                <%- partial('partial/sidebar') %>
                             </div>
                         </div>
                     </div>
-                    <% }) %>
-                    <%- partial('partial/paginator') %>
-                    <br>
                 </div>
-                <div class="col-md-3" style="padding-top: 30px;">
-                    <%- partial('partial/sidebar') %>
-                </div>
-            </div>
-        </div>
-    </div>
-    <%- partial('partial/footer') %>
-</body>
+                <%- partial('partial/footer') %>
+    </body>
