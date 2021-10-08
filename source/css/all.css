@@ -6562,3 +6562,7 @@ html *::-webkit-scrollbar-thumb {
     right: 200px;
     opacity: 0.15;
 }
+
+.post-copyright ul {
+    padding-left: 15px;
+}
