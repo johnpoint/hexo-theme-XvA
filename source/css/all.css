@@ -5915,6 +5915,7 @@ pre {
     background-color: #f5f5f5;
     list-style: none;
     position: relative;
+    overflow: hidden;
 }
 
 .post-copyright li {
