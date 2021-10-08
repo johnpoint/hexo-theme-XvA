@@ -6559,8 +6559,8 @@ html *::-webkit-scrollbar-thumb {
     width: 128px;
     height: 128px;
     top: -35px;
-    right: 200px;
-    opacity: 0.15;
+    right: 5%;
+    opacity: 0.10;
 }
 
 ul.post-copyright {
