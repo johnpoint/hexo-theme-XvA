@@ -5913,7 +5913,8 @@ pre {
     padding: .5em 1em;
     border-left: 3px solid #ff1700;
     background-color: #f5f5f5;
-    list-style: none
+    list-style: none;
+    position: relative;
 }
 
 .post-copyright li {
@@ -6550,4 +6551,13 @@ html *::-webkit-scrollbar-thumb {
 
 .night *::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.3);
+}
+
+.copyright-img {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: -35px;
+    right: 740px;
+    opacity: 0.15;
 }
