@@ -1,19 +1,19 @@
 <script>
     let pagestatus = 0;
-    $('.navbar-default').addClass("nav-bg");
+    document.querySelector('.navbar-default').addClass("nav-bg");
     if (window.location.href.indexOf("page") != -1) {
-        $('#bigimg').hide();
-        $('.navbar-default').removeClass("nav-bg");
+        document.querySelector('#bigimg').hide();
+        document.querySelector('.navbar-default').removeClass("nav-bg");
         pagestatus = 1;
     }
-    $(window).scroll(function(event) {
-        h = $(window).scrollTop()
+    document.querySelector(window).scroll(function(event) {
+        h = document.querySelector(window).scrollTop()
         if (pagestatus == 0) {
             if (h >= document.body.clientHeight - 30) {
-                $('.navbar-default').removeClass("nav-bg");
+                document.querySelector('.navbar-default').removeClass("nav-bg");
             }
             if (h <= document.body.clientHeight - 30) {
-                $('.navbar-default').addClass("nav-bg");
+                document.querySelector('.navbar-default').addClass("nav-bg");
             }
         }
     });
