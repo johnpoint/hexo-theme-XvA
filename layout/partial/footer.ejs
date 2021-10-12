@@ -1,35 +1,42 @@
 <div id="foot">
-        <footer>
-                <script src="/js/bootstrap.min.js"></script>
-                <% if(theme.fancybox){ %>
-                <script src="/js/jquery.fancybox.min.js"></script>
-                <script src="/js/fancybox.js"></script>
-                <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
-                <% } %>
-                <% if(theme.analytics.google.enable){ %><%- partial('gtag') %><% } %>
-                <% if(theme.analytics.LA.enable){ %><%- partial('LA') %><% } %>
-                <% if(theme.analytics.busuanzi.enable){ %>
-                <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                <% } %>
-                <% if(theme.totop){ %>
-                <script src="/js/totop.js"></script>
-                <% } %>
-                <script src="/js/night.js"></script>
-                <div id="footer">Copyright © <%- theme.sitesince %> - <%- date(Date.now(), 'YYYY') %> <a href="/."
-                                rel="nofollow"><%- config.title %>.</a><br>Powered by<a rel="nofollow" target="_blank"
-                                href="https://hexo.io">
-                                Hexo </a> & <a rel="nofollow" target="_blank"
-                                href="https://github.com/johnpoint/hexo-theme-XvA">XvA v3.8.0</a>.
-                        <% if(theme.analytics.busuanzi.enable){ %>
-                        <br><span id="busuanzi_container_site_pv" style='display:none'>
+    <footer>
+        <script src="/js/bootstrap.min.js"></script>
+        <% if(theme.fancybox){ %>
+            <!-- <script src="/js/jquery.fancybox.min.js"></script> -->
+            <!-- <script src="/js/fancybox.js"></script> -->
+            <!-- <link rel="stylesheet" href="/css/jquery.fancybox.min.css"> -->
+            <% } %>
+                <% if(theme.analytics.google.enable){ %>
+                    <%- partial('gtag') %>
+                        <% } %>
+                            <% if(theme.analytics.LA.enable){ %>
+                                <%- partial('LA') %>
+                                    <% } %>
+                                        <% if(theme.analytics.busuanzi.enable){ %>
+                                            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+                                            <% } %>
+                                                <% if(theme.totop){ %>
+                                                    <script src="/js/totop.js"></script>
+                                                    <% } %>
+                                                        <script src="/js/night.js"></script>
+                                                        <div id="footer">Copyright ©
+                                                            <%- theme.sitesince %> -
+                                                                <%- date(Date.now(), 'YYYY') %>
+                                                                    <a href="/." rel="nofollow">
+                                                                        <%- config.title %>.</a><br>Powered by<a rel="nofollow" target="_blank" href="https://hexo.io">
+                                Hexo </a> & <a rel="nofollow" target="_blank" href="https://github.com/johnpoint/hexo-theme-XvA">XvA v3.8.0</a>.
+                                                                    <% if(theme.analytics.busuanzi.enable){ %>
+                                                                        <br><span id="busuanzi_container_site_pv" style='display:none'>
                                 <%= theme.analytics.busuanzi.text.head %> <span id="busuanzi_value_site_pv"></span>
-                                <%= theme.analytics.busuanzi.text.end %>
-                        </span><% } %></div>
-                <link rel="stylesheet" href="/css/dark.css">
-                <script src="/js/highlight.js">
-                </script>
-                <script>
-                        hljs.initHighlightingOnLoad();
-                </script>
-        </footer>
+                                                                        <%= theme.analytics.busuanzi.text.end %>
+                                                                            </span>
+                                                                            <% } %>
+                                                        </div>
+                                                        <link rel="stylesheet" href="/css/dark.css">
+                                                        <script src="/js/highlight.js">
+                                                        </script>
+                                                        <script>
+                                                            hljs.initHighlightingOnLoad();
+                                                        </script>
+    </footer>
 </div>
