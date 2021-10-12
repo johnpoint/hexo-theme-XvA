@@ -1,19 +1,19 @@
 <script>
     let pagestatus = 0;
-    document.querySelector('.navbar-default').addClass("nav-bg");
+    document.querySelector('.navbar-default').classList.add("nav-bg");
     if (window.location.href.indexOf("page") != -1) {
         document.querySelector('#bigimg').hide();
-        document.querySelector('.navbar-default').removeClass("nav-bg");
+        document.querySelector('.navbar-default').classList.remove("nav-bg");
         pagestatus = 1;
     }
     document.querySelector(window).scroll(function(event) {
         h = document.querySelector(window).scrollTop()
         if (pagestatus == 0) {
             if (h >= document.body.clientHeight - 30) {
-                document.querySelector('.navbar-default').removeClass("nav-bg");
+                document.querySelector('.navbar-default').classList.remove("nav-bg");
             }
             if (h <= document.body.clientHeight - 30) {
-                document.querySelector('.navbar-default').addClass("nav-bg");
+                document.querySelector('.navbar-default').classList.add("nav-bg");
             }
         }
     });
