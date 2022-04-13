@@ -118,7 +118,11 @@
             %>background: url('<%= theme.bigimg.background -%>');
             <%
         }
-        %><% if (theme.bigimg.color !='') {
+        %><% if (theme.bigimg.color=='') {
+            %>background-color: rgb(0, 0, 0);
+            <%
+        }
+        else {
             %>background-color: <%=theme.bigimg.color -%>;
             <%
         }
