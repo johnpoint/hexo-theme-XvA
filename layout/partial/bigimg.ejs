@@ -110,7 +110,7 @@
     }
     
     div#bigimg::before {
-        <% if(theme.bigimg.background=='') {
+        <% if(theme.bigimg.background=='' && theme.bigimg.color=='') {
             %>background: url('/img/bg.jpeg');
             <%
         }
@@ -119,7 +119,7 @@
             <%
         }
         %><% if (theme.bigimg.color !='') {
-            %>background: <%=theme.bigimg.color -%>);
+            %>background-color: <%=theme.bigimg.color -%>;
             <%
         }
         %>background-repeat: no-repeat;
