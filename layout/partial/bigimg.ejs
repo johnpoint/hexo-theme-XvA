@@ -114,8 +114,12 @@
             %>background: url('/img/bg.jpeg');
             <%
         }
-        else {
+        %><% if(theme.bigimg.background!='') {
             %>background: url('<%= theme.bigimg.background -%>');
+            <%
+        }
+        %><% if (theme.bigimg.color !='') {
+            %>background: <%=theme.bigimg.color -%>);
             <%
         }
         %>background-repeat: no-repeat;
