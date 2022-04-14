@@ -28,12 +28,6 @@ cd themes/XvA
 cp _config.example.yml _config.yml
 ```
 
-# Version 版本号
-
-A . B . C
-
-当 C 变化时配置文件无需修改，其余两位数字变化时有可能需要对配置文件进行修改
-
 # Configuration 配置
 
 ## Theme configuration 主题全局配置
@@ -58,6 +52,7 @@ yiyan: false #一言 https://www.jinrishici.com
 bigimg: #首页巨幕图片
   enable: false
   background: 
+  color: 
   RSS: # URL
   Github: https://github.com/ #URL
   Telegram: https://t.me/ #URL

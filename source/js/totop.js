@@ -1,6 +1,6 @@
 var timer = null;
 
-console.log("XvA v3.8.1")
+console.log("XvA v3.9.0")
 
 function totop() {
     cancelAnimationFrame(timer);
