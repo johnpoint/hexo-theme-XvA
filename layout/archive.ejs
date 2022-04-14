@@ -1,58 +1,42 @@
 <!DOCTYPE html>
 <%- partial('partial/head') %>
 
-<body>
-    <div id="navv">
-        <%- partial('partial/header') %>
-    </div>
-    <div id="main">
-        <div class="container">
-            <div class="page-header posttitle">
-                <% if(page.path.indexOf('tags')==-1){ %>
-                <h1><%- __('Archives') %> <small><%- __('All articles') %></small></h1>
-                <% }else{ %>
-                <h1>Tag: <%- page.path.replace('tags/','').replace('/index.html','') %> <small>All articles</small></h1>
-                <% } %>
-            </div>
-            <div class="archive" path="<%= page.path %>">
-                <% var ayear %>
-                <% var byear %>
-                <% page.posts.each(function (post) { %>
-                <% byear=date(post.date, "YYYY") %>
-                <% if(ayear!=byear){ ayear=byear %>
-                <h2><%- byear %></h2>
-                <% } %>
-                <div class="archives-post-content" onclick="window.location.pathname='<%- url_for(post.path) %>'">
-                    <span class="post-date"><%= date(post.date, "MM-DD") %></span>
-                    <a class="post-title posttitle" href="<%- url_for(post.path) %>"><%= post.title %></a></div>
-                <% }) %>
-            </div>
-            <hr />
-            <%- partial('partial/paginator') %>
+    <body>
+        <div id="navv">
+            <%- partial('partial/header') %>
         </div>
-    </div>
-    <div id="foot">
-        <footer>
-            <script src="/js/bootstrap.min.js"></script>
-            <% if(theme.analytics.google.enable){ %><%- partial('partial/gtag') %><% } %>
-            <% if(theme.analytics.LA.enable){ %><%- partial('partial/LA') %><% } %>
-            <% if(theme.analytics.busuanzi.enable){ %>
-            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <% } %>
-            <% if(theme.totop){ %>
-            <script src="/js/totop.js"></script>
-            <% } %>
-            <script src="/js/night.js"></script>
-            <div id="footer">Copyright © <%- theme.sitesince %> - <%- date(Date.now(), 'YYYY') %> <a href="/."
-                    rel="nofollow"><%- config.title %>.</a><br>Powered by<a rel="nofollow" target="_blank"
-                    href="https://hexo.io">
-                    Hexo </a> and <a rel="nofollow" target="_blank"
-                    href="https://github.com/johnpoint/hexo-theme-XvA">XvA</a>.
-                <% if(theme.analytics.busuanzi.enable){ %>
-                <br><span id="busuanzi_container_site_pv" style='display:none'>
-                    <%= theme.analytics.busuanzi.text.head %> <span id="busuanzi_value_site_pv"></span>
-                    <%= theme.analytics.busuanzi.text.end %>
-                </span><% } %></div>
-        </footer>
-    </div>
-</body>
+        <div id="main">
+            <div class="container">
+                <div class="page-header posttitle">
+                    <% if(page.path.indexOf('tags')==-1){ %>
+                        <h1>
+                            <%- __('Archives') %> <small><%- __('All articles') %></small></h1>
+                        <% }else{ %>
+                            <h1>Tag:
+                                <%- page.path.replace('tags/','').replace('/index.html','') %> <small>All articles</small></h1>
+                            <% } %>
+                </div>
+                <div class="archive" path="<%= page.path %>">
+                    <% var ayear %>
+                        <% var byear %>
+                            <% page.posts.each(function (post) { %>
+                                <% byear=date(post.date, "YYYY") %>
+                                    <% if(ayear!=byear){ ayear=byear %>
+                                        <h2>
+                                            <%- byear %>
+                                        </h2>
+                                        <% } %>
+                                            <div class="archives-post-content" onclick="window.location.pathname='<%- url_for(post.path) %>'">
+                                                <span class="post-date"><%= date(post.date, "MM-DD") %></span>
+                                                <a class="post-title posttitle" href="<%- url_for(post.path) %>">
+                                                    <%= post.title %>
+                                                </a>
+                                            </div>
+                                            <% }) %>
+                </div>
+                <hr />
+                <%- partial('partial/paginator') %>
+            </div>
+        </div>
+        <%- partial('partial/footer') %>
+    </body>
