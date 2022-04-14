@@ -1,95 +1,67 @@
 <style>
     div#bigimg {
         height: 350px;
-
         <% if(page.bigimg) {
             %>background: <%- page.bigimg %>;
             <%
         }
-
         else {
-            num=parseInt(Math.floor(Math.random()*10)/2) %><% if(num==0) {
-                %>background: url('/img/0.jpg');
-                <%
-            }
-
-            %><% if(num==1) {
-                %>background: url('/img/1.jpg');
-                <%
-            }
-
-            %><% if(num==2) {
-                %>background: url('/img/2.jpg');
-                <%
-            }
-
-            %><% if(num==3) {
-                %>background: url('/img/3.jpg');
-                <%
-            }
-
-            %><% if(num==4) {
-                %>background: url('/img/4.jpg');
-                <%
-            }
-
-            %><%
+            %>background-color: rgb(<% Math.round(Math.random() * (110 - 87)) + 87 %>, <% Math.round(Math.random() * (110 - 87)) + 87 %>, <% Math.round(Math.random() * (110 - 87)) + 87 %>);
+            <%
         }
-
         %>background-repeat: no-repeat;
         background-size: cover;
     }
-
-
+    
     .posttitle {
         color: white;
         text-shadow: 0 0 40px #000000;
     }
-
+    
     small {
         color: white !important;
         text-shadow: 0 0 20px #000000;
     }
-
+    
     .night .frpanel {
         background: #000000;
     }
-
+    
     .page-header {
         margin: 40px 0 20px;
         padding-bottom: 10px;
         padding-top: 10px;
         padding-left: 10px;
     }
-
+    
     .post-content {
         background: white;
         padding: 15px;
     }
-
+    
     .night .post-content {
         background: #000000;
         padding: 15px;
     }
-
+    
     @media (min-width: 768px) {
         div#bigimg {
             height: 350px !important;
         }
     }
-
+    
     .post-sidebar {
         top: 0px !important;
     }
-
+    
     div#bigimg {
         height: 240px;
     }
-
+    
     .col-md-3 {
         top: 200px;
     }
-
+    
     div#main {
         min-height: 70%;
         background: rgba(0, 0, 0, 0) !important;
@@ -97,13 +69,12 @@
         position: relative;
         top: -260px;
     }
-
+    
     .night .shaw {
         height: 100%;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.3);
     }
-
     /*.container-fri {
         background-color: white;
     }*/
