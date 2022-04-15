@@ -1,6 +1,6 @@
 var timer = null;
 
-const xvaversion = "v3.9.2"
+const xvaversion = "v3.9.3"
 
 console.log("XvA " + xvaversion)
 
