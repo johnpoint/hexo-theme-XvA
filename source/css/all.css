@@ -492,7 +492,7 @@ h6 small {
 
 h1.posttitle,
 .posttitle h1 {
-    font-size: 40px;
+    font-size: 3em;
 }
 
 .h1,
@@ -6576,4 +6576,5 @@ ul.post-copyright {
     font-size: 1.1em;
     line-height: 2;
     padding-bottom: 10px;
+    letter-spacing: .5px;
 }
