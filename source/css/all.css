@@ -6257,13 +6257,13 @@ ul {
     left: -30px;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     box-shadow: none !important
 }
 
 .frpanel {
-    height: 110px;
+    height: 150px;
     box-shadow: 0 0 5px 0 #000;
     transition-duration: .1s
 }
